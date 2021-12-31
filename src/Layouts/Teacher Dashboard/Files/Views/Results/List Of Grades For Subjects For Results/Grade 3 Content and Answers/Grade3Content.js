@@ -57,7 +57,7 @@ function Grade3ContentForResultsForSubjectsForTeacher() {
     //history.push('/placement-question-details')
   }
   const handleOnClickDelete = (data) => {
-    axios.delete('http://localhost:7000/coursePlannings/delete/' + data._id)
+    axios.delete('https://syntics.co/coursePlannings/delete/' + data._id)
           .then((res) => {
               console.log('Student successfully deleted!')
               window.location.reload(false)

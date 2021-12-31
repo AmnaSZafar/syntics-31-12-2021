@@ -1,14 +1,14 @@
 //getting API for showing all the data
 import axios from 'axios';
-//export const getAdmissionTestQuestions = () => fetch("http://localhost:7000/admissionQuestions").then(res => res.json())
+//export const getAdmissionTestQuestions = () => fetch("https://syntics.co/admissionQuestions").then(res => res.json())
 export const getAdmissionTestQuestions = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/admissionQuestions`)
+	axios.post(`https://syntics.co/admissionQuestions`)
 		.then(res => res.data, )
 )
 
 //getting API for inserting the data
-export const createAdmissionTestQuestions = (todo) => fetch("http://localhost:7000/admissionQuestions/create", {
+export const createAdmissionTestQuestions = (todo) => fetch("https://syntics.co/admissionQuestions/create", {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -18,7 +18,7 @@ export const createAdmissionTestQuestions = (todo) => fetch("http://localhost:70
 })  
 
 //getting API for updating specific data
-export const updateAdmissionTestQuestions = (todo, _id) => fetch(`http://localhost:7000/${_id}`, {
+export const updateAdmissionTestQuestions = (todo, _id) => fetch(`https://syntics.co/${_id}`, {
 // http://localhost:4000/${id}
   method: "POST",
   headers: {
@@ -29,9 +29,9 @@ export const updateAdmissionTestQuestions = (todo, _id) => fetch(`http://localho
 })  
 
 //getting API for getting specific data
-//export const getAdmissionTestQuestion = (_id) => fetch(`http://localhost:7000/${_id}`).then(res => res.json())
+//export const getAdmissionTestQuestion = (_id) => fetch(`https://syntics.co/${_id}`).then(res => res.json())
 export const getAdmissionTestQuestion = _id => (
 	console.log(_id),
-	axios.post(`http://localhost:7000/${_id}`)
+	axios.post(`https://syntics.co/${_id}`)
 		.then(res => res.data, )
 )

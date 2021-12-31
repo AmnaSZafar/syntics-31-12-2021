@@ -40,7 +40,7 @@ function FlipBookForStudents() {
 const handleFlipBookFile = (data) => {
   axios({
     method: "POST",
-    url: `http://localhost:7000/api/file/display/${data}`,
+    url: `https://syntics.co/api/file/display/${data}`,
     responseType: "blob"
   })
     .then(res => rezzingFileForCv(res.data),)

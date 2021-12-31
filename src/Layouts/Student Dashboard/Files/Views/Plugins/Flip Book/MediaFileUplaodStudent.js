@@ -24,7 +24,7 @@ class MediaFileUplaodStudent extends Component {
   }
 
   loadFiles() {
-    fetch('http://localhost:7000/api/files')
+    fetch('https://syntics.co/api/files')
       .then(res => res.json())
       .then(files => {
         if (files.message) {
@@ -107,7 +107,7 @@ class MediaFileUplaodStudent extends Component {
                           var d = new Date(file.uploadDate);
                           return (
                             <tr key={index}>
-                              <td><a href={`http://localhost:7000/api/files/${file.filename}`}>{file.filename}</a></td>
+                              <td><a href={`https://syntics.co/api/files/${file.filename}`}>{file.filename}</a></td>
                             </tr>
                           )
                         })}

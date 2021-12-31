@@ -53,7 +53,7 @@ function ListOfTeachersForManager() {
     }
 
     const handleOnClickRemove = (data) => {
-      axios.delete('http://localhost:7000/teachers/delete/' + data._id)
+      axios.delete('https://syntics.co/teachers/delete/' + data._id)
       .then((res) => {
           console.log('Student successfully deleted!')
           window.location.reload(false)

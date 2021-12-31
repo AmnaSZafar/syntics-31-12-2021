@@ -26,7 +26,7 @@ class FilesUploadComponentForStudent extends Component {
         console.log(formData, "formData")
         console.log(FormData, "FormData")
         
-        axios.post("http://localhost:7000/api/user-profile", formData, {
+        axios.post("https://syntics.co/api/user-profile", formData, {
         }).then(res => {
             console.log(res)
         })

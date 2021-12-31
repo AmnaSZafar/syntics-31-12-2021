@@ -103,7 +103,7 @@ function WebCamStreamVideoCapture() {
     }
   }, [recordedChunks]);
 
-  const createVideoRecordingFile = (todo) => fetch("http://localhost:7000/video/create", {
+  const createVideoRecordingFile = (todo) => fetch("https://syntics.co/video/create", {
     method: "POST",
     headers: {
       "Accept": "application/json",

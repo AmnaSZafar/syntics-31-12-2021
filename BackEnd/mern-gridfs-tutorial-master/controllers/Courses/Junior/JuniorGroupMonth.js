@@ -12,7 +12,7 @@ var { SectionsJuniorGroupMonth} = require('../../../models/Courses/Junior/Junior
 
  //Now to use router.ger to use properties of the schema like find collection, get collection, etc
 
- //To use this get requeest we need to type http://localhost:7000/employees/, this is coming from index.js 
+ //To use this get requeest we need to type https://syntics.co/employees/, this is coming from index.js 
  //Where its mentioned /employees is the router
 
  

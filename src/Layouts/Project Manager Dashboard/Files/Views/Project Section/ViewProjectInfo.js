@@ -33,7 +33,7 @@ function ViewProjectInfo() {
         const fileForProject = () => {
             axios({
                 method: "POST",
-                url: `http://localhost:7000/api/file/display/${location.state.projectAttachmentsReference}`,
+                url: `https://syntics.co/api/file/display/${location.state.projectAttachmentsReference}`,
                 responseType: "blob"
               })
                 .then(res => rezzingFileForProject(res.data),)

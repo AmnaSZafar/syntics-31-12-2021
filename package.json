@@ -1,6 +1,6 @@
 {
   "name": "Syntics",
-  "proxy": "http://localhost:7000",
+  "proxy": "https://syntics.co",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

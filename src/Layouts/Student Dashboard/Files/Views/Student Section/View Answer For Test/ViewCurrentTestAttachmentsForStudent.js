@@ -16,7 +16,7 @@ function ViewCurrentTestAttachmentsForStudent() {
         if(location.state.answertype == "Drawing"){
             axios({
                 method: "POST",
-                url: `http://localhost:7000/api/file/display/${location.state.questionReferenceName}`,
+                url: `https://syntics.co/api/file/display/${location.state.questionReferenceName}`,
                 responseType: "blob"
               })
                 .then(res => rezzingFileForImg(res.data),)
@@ -45,7 +45,7 @@ function ViewCurrentTestAttachmentsForStudent() {
         else if(location.state.answertype == "Audio"){
             axios({
                 method: "POST",
-                url: `http://localhost:7000/api/file/display/${location.state.questionReferenceName}`,
+                url: `https://syntics.co/api/file/display/${location.state.questionReferenceName}`,
                 responseType: "blob"
               })
                 .then(res => rezzingFileForCv(res.data),)
@@ -72,7 +72,7 @@ function ViewCurrentTestAttachmentsForStudent() {
         else if(location.state.answertype == "Video"){
             axios({
                 method: "POST",
-                url: `http://localhost:7000/api/file/display/${location.state.questionReferenceName}`,
+                url: `https://syntics.co/api/file/display/${location.state.questionReferenceName}`,
                 responseType: "blob"
               })
                 .then(res => rezzingFileForVid(res.data),)
@@ -99,7 +99,7 @@ function ViewCurrentTestAttachmentsForStudent() {
         else if(location.state.answertype == "Upload a File"){
             axios({
                 method: "POST",
-                url: `http://localhost:7000/api/file/display/${location.state.questionReferenceName}`,
+                url: `https://syntics.co/api/file/display/${location.state.questionReferenceName}`,
                 responseType: "blob"
               })
                 .then(res => rezzingFileForVid(res.data),)
@@ -129,7 +129,7 @@ function ViewCurrentTestAttachmentsForStudent() {
         if(location.state.answertype == "Drawing"){
             axios({
                 method: "POST",
-                url: `http://localhost:7000/api/file/display/${location.state.referenceName}`,
+                url: `https://syntics.co/api/file/display/${location.state.referenceName}`,
                 responseType: "blob"
               })
                 .then(res => rezzingFileForImg(res.data),)
@@ -155,7 +155,7 @@ function ViewCurrentTestAttachmentsForStudent() {
         else if(location.state.answertype == "Upload a File"){
             axios({
                 method: "POST",
-                url: `http://localhost:7000/api/file/display/${location.state.referenceName}`,
+                url: `https://syntics.co/api/file/display/${location.state.referenceName}`,
                 responseType: "blob"
               })
                 .then(res => rezzingFileForImg(res.data),)

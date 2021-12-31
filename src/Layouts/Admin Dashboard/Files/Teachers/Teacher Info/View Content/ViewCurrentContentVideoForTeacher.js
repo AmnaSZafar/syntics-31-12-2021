@@ -62,7 +62,7 @@ function ViewCurrentContentVideoForTeacher() {
                             <label >Attachments</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
-                            <video controls width="400" src = {`http://localhost:7000/api/file/display/${location.state.referenceName}`}  type="video/webm" />
+                            <video controls width="400" src = {`https://syntics.co/api/file/display/${location.state.referenceName}`}  type="video/webm" />
                         </div>
                         <hr />
                     </div>

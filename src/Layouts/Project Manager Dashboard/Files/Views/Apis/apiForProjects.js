@@ -2,11 +2,11 @@
 import axios from 'axios';
 
 export const getProjects = () => (
-	axios.post(`http://localhost:7000/projects`)
+	axios.post(`https://syntics.co/projects`)
 		.then(res => res.data, )
 )
 //getting API for inserting the data
-export const createProjects = (todo) => fetch("http://localhost:7000/projects/create", {
+export const createProjects = (todo) => fetch("https://syntics.co/projects/create", {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -16,7 +16,7 @@ export const createProjects = (todo) => fetch("http://localhost:7000/projects/cr
 })  
 
 //getting API for updating specific data
-export const updateProject = (todo, id) => fetch(`http://localhost:7000/projects/${id}`, {
+export const updateProject = (todo, id) => fetch(`https://syntics.co/projects/${id}`, {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -26,15 +26,15 @@ export const updateProject = (todo, id) => fetch(`http://localhost:7000/projects
 })  
 
 //getting API for getting specific data
-export const getProject = (id) => fetch(`http://localhost:7000/projects/${id}`).then(res => res.json())
+export const getProject = (id) => fetch(`https://syntics.co/projects/${id}`).then(res => res.json())
 export const getRegisterationprojects = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/projects/specific/${id}`)
+	axios.post(`https://syntics.co/projects/specific/${id}`)
 		.then(res => res.data, )
 		
 )
 export const getRegisterationprojectsById = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/projects/specific/id/${id}`)
+	axios.post(`https://syntics.co/projects/specific/id/${id}`)
 		.then(res => res.data, )
 )

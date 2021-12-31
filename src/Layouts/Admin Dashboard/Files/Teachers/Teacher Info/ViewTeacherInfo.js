@@ -36,7 +36,7 @@ function ViewTeacherInfo() {
         const fileForImg = () => {
             axios({
                 method: "POST",
-                url: `http://localhost:7000/api/file/display/${location.state.imgReference}`,
+                url: `https://syntics.co/api/file/display/${location.state.imgReference}`,
                 responseType: "blob"
               })
                 .then(res => rezzingFileForImg(res.data),)
@@ -46,7 +46,7 @@ function ViewTeacherInfo() {
         const fileForCv = () => {
             axios({
                 method: "POST",
-                url: `http://localhost:7000/api/file/display/${location.state.cvReference}`,
+                url: `https://syntics.co/api/file/display/${location.state.cvReference}`,
                 responseType: "blob"
               })
                 .then(res => rezzingFileForCv(res.data),)
@@ -55,7 +55,7 @@ function ViewTeacherInfo() {
           const fileForVid = () => {
             axios({
                 method: "POST",
-                url: `http://localhost:7000/api/file/display/${location.state.vidReference}`,
+                url: `https://syntics.co/api/file/display/${location.state.vidReference}`,
                 responseType: "blob"
               })
                 .then(res => rezzingFileForVid(res.data),)

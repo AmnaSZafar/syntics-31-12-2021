@@ -106,7 +106,7 @@ function ListOfAssignmentsForTeacher() {
       }
     }
     const handleOnClickDelete = (data) => {
-      axios.delete('http://localhost:7000/assignmentPlannings/delete/' + data._id)
+      axios.delete('https://syntics.co/assignmentPlannings/delete/' + data._id)
             .then((res) => {
                 console.log('Student successfully deleted!')
                 window.location.reload(false)

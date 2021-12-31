@@ -55,7 +55,7 @@ function AnswerDrawingTest() {
 const fileForCv = () => {
     axios({
         method: "POST",
-        url: `http://localhost:7000/api/file/display/${file}`,
+        url: `https://syntics.co/api/file/display/${file}`,
         responseType: "blob"
       })
         .then(res => rezzingFileForCv(res.data),)

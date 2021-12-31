@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-//export const getTodosForTeacher = () => fetch("http://localhost:7000/").then(res => res.json())
+//export const getTodosForTeacher = () => fetch("https://syntics.co/").then(res => res.json())
 export const getTodosForTeacher = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/`)
+	axios.post(`https://syntics.co/`)
 		.then(res => res.data, )
 )
 //getting API for inserting the data
-export const createTodoForTeachers = (todo) => fetch("http://localhost:7000/teachers/create", {
+export const createTodoForTeachers = (todo) => fetch("https://syntics.co/teachers/create", {
 
   method: "POST",
   headers: {
@@ -18,7 +18,7 @@ export const createTodoForTeachers = (todo) => fetch("http://localhost:7000/teac
 })  
 
 //getting API for updating specific data
-export const updateTodoForTeacher = (todo, id) => fetch(`http://localhost:7000/${id}`, {
+export const updateTodoForTeacher = (todo, id) => fetch(`https://syntics.co/${id}`, {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -28,9 +28,9 @@ export const updateTodoForTeacher = (todo, id) => fetch(`http://localhost:7000/$
 })  
 
 //getting API for getting specific data
-//export const getTeacher = (id) => fetch(`http://localhost:7000/teachers/specific/${id}`).then(res => res.json())
+//export const getTeacher = (id) => fetch(`https://syntics.co/teachers/specific/${id}`).then(res => res.json())
 export const getTeacher = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/teachers/specific/${id}`)
+	axios.post(`https://syntics.co/teachers/specific/${id}`)
 		.then(res => res.data, )
 )

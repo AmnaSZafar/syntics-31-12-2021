@@ -34,7 +34,7 @@ function ViewCurrentAnswerForTeacherAttachmentsForTest() {
       const fileForCv = () => {
         axios({
             method: "POST",
-            url: `http://localhost:7000/api/file/display/${location.state.referenceName}`,
+            url: `https://syntics.co/api/file/display/${location.state.referenceName}`,
             responseType: "blob"
           })
             .then(res => rezzingFileForCv(res.data),)

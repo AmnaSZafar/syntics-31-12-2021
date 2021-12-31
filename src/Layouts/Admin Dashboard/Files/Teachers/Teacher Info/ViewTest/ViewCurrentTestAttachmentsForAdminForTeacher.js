@@ -19,7 +19,7 @@ function ViewCurrentTestAttachmentsForAdminForTeacher() {
                             <label >Attachments</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
-                            <img width="350" className = "text-dark" style={{textDecoration : "none", fontWeight: "bold",  boxShadow: "5px 5px #888888"}} src={`http://localhost:7000/api/file/display/${location.state.referenceName}`}>
+                            <img width="350" className = "text-dark" style={{textDecoration : "none", fontWeight: "bold",  boxShadow: "5px 5px #888888"}} src={`https://syntics.co/api/file/display/${location.state.referenceName}`}>
                             </img>
                         </div>
                         <hr />
@@ -33,7 +33,7 @@ function ViewCurrentTestAttachmentsForAdminForTeacher() {
                     <label >Attachments</label>
                 </div>
                 <div class="p-3 mb-2 bg-light text-dark">
-                    <audio src={`http://localhost:7000/api/file/display/${location.state.referenceName}`}  controls="controls" className="" type="audio/mpeg"  />
+                    <audio src={`https://syntics.co/api/file/display/${location.state.referenceName}`}  controls="controls" className="" type="audio/mpeg"  />
                 </div>
                 <hr />
             </div> 
@@ -46,7 +46,7 @@ function ViewCurrentTestAttachmentsForAdminForTeacher() {
                             <label >Attachments</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
-                            <video controls width="400" src = {`http://localhost:7000/api/file/display/${location.state.referenceName}`}  type="video/webm" />
+                            <video controls width="400" src = {`https://syntics.co/api/file/display/${location.state.referenceName}`}  type="video/webm" />
                         </div>
                         <hr />
                     </div>

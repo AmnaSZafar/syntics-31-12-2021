@@ -24,7 +24,7 @@ function Testing() {
               </div>
               <div className="card-body">
                 <div>
-                 <a href = "http://localhost:7000/testing">   
+                 <a href = "https://syntics.co/testing">   
                 <button className = "btn btn-dark">Click to Check Python</button>
                 </a>
                 </div>

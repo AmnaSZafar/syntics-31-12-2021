@@ -87,7 +87,7 @@ function EditProjectForAdmin() {
       const fileForCv = () => {
         axios({
             method: "POST",
-            url: `http://localhost:7000/api/file/display/${location.state.projectAttachmentsReference}`,
+            url: `https://syntics.co/api/file/display/${location.state.projectAttachmentsReference}`,
             responseType: "blob"
           })
             .then(res => rezzingFileForCv(res.data),)

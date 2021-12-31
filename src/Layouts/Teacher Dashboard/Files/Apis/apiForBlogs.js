@@ -1,18 +1,18 @@
 //getting API for showing all the data
 import axios from 'axios';
 /*
-export const getBlogs = () => fetch("http://localhost:7000/blogs").then(res => res.json())
+export const getBlogs = () => fetch("https://syntics.co/blogs").then(res => res.json())
 */
 
 export const getBlogs = item => (
 	console.log(item),
-	axios.post('http://localhost:7000/blogs', item)
+	axios.post('https://syntics.co/blogs', item)
 		.then(res => res.data, )
 		
 )
 
 //getting API for inserting the data
-export const createBlogs = (todo) => fetch("http://localhost:7000/blogs/create", {
+export const createBlogs = (todo) => fetch("https://syntics.co/blogs/create", {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -23,7 +23,7 @@ export const createBlogs = (todo) => fetch("http://localhost:7000/blogs/create",
 
 
 //getting API for updating specific data
-export const updateBlog = (todo, id) => fetch(`http://localhost:7000/coursePlannings/${id}`, {
+export const updateBlog = (todo, id) => fetch(`https://syntics.co/coursePlannings/${id}`, {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -32,7 +32,7 @@ export const updateBlog = (todo, id) => fetch(`http://localhost:7000/coursePlann
   body: JSON.stringify(todo)
 })  
 //getting API for deleting specific data
-export const deleteBlog = (todo, id) => fetch(`http://localhost:7000/coursePlannings/${id}`, {
+export const deleteBlog = (todo, id) => fetch(`https://syntics.co/coursePlannings/${id}`, {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -43,11 +43,11 @@ export const deleteBlog = (todo, id) => fetch(`http://localhost:7000/coursePlann
 
 
 //getting API for getting specific data
-//export const getBlog = (id) => fetch(`http://localhost:7000/${id}`).then(res => res.json())
+//export const getBlog = (id) => fetch(`https://syntics.co/${id}`).then(res => res.json())
 
 export const getBlog = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/${id}`)
+	axios.post(`https://syntics.co/${id}`)
 		.then(res => res.data, )
 		
 )

@@ -17,7 +17,7 @@ function AnswerQueryForAdmin() {
         location.state.queryAnswerContent = contentFromTextArea
         updateContact(location.state, location.state._id)
         console.log(location.state)
-        fetch(`http://localhost:7000/email`, {
+        fetch(`https://syntics.co/email`, {
           method: "POST",
           headers: {
             "Accept": "application/json",

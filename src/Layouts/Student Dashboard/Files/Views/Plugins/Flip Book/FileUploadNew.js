@@ -24,7 +24,7 @@ class FileUploadNewForTeacherForBook extends Component {
   }
 
   loadFiles() {
-    fetch('http://localhost:7000/api/files')
+    fetch('https://syntics.co/api/files')
       .then(res => res.json())
       .then(files => {
         if (files.message) {

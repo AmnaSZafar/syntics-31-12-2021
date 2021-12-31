@@ -62,7 +62,7 @@ function ViewCurrentContentAudioForAdminForTeacher() {
                             <label >Attachments</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
-                            <audio src={`http://localhost:7000/api/file/display/${location.state.referenceName}`}  controls="controls" className="" type="audio/mpeg"  />
+                            <audio src={`https://syntics.co/api/file/display/${location.state.referenceName}`}  controls="controls" className="" type="audio/mpeg"  />
                         </div>
                         <hr />
                     </div>

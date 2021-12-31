@@ -7,7 +7,7 @@ import React, { useEffect, useRef, useState } from "react"
 import { CopyToClipboard } from "react-copy-to-clipboard"
 import Peer from "simple-peer"
 import io from "socket.io-client"
-//const socket = io.connect('http://localhost:7000')
+//const socket = io.connect('https://syntics.co')
 
 function VideoChatForTeacher() {
 	/*

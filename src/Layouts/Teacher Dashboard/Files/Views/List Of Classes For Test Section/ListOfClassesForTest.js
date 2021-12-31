@@ -76,7 +76,7 @@ function ListOfClassesForTestForTeacher() {
     }
   }
   const handleOnClickDelete = (data) => {
-    axios.delete('http://localhost:7000/testPlannings/delete/' + data._id)
+    axios.delete('https://syntics.co/testPlannings/delete/' + data._id)
           .then((res) => {
               console.log('Student successfully deleted!')
               window.location.reload(false)

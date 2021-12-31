@@ -4,87 +4,87 @@ import axios from 'axios';
 
 export const getTestPlannings = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/`)
+	axios.post(`https://syntics.co/testPlannings/`)
 		.then(res => res.data, )
 )
 
 export const getTestPlanningsForGrade1 = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/Students-Grade-1/${id}`)
+	axios.post(`https://syntics.co/testPlannings/Students-Grade-1/${id}`)
 		.then(res => res.data, )
 )
 
 
 export const getTestPlanningsForGrade2 = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/Students-Grade-2/${id}`)
+	axios.post(`https://syntics.co/testPlannings/Students-Grade-2/${id}`)
 		.then(res => res.data, )
 )
 
 export const getTestPlanningsForGrade3 = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/Students-Grade-3/${id}`)
+	axios.post(`https://syntics.co/testPlannings/Students-Grade-3/${id}`)
 		.then(res => res.data, )
 )
 
 export const getTestPlanningsForGrade4 = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/Students-Grade-4/${id}`)
+	axios.post(`https://syntics.co/testPlannings/Students-Grade-4/${id}`)
 		.then(res => res.data, )
 )
 
 
 export const getTestPlanningsForGrade5 = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/Students-Grade-5/${id}`)
+	axios.post(`https://syntics.co/testPlannings/Students-Grade-5/${id}`)
 		.then(res => res.data, )
 )
 
 export const getTestPlanningsForGrade6 = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/Students-Grade-6/${id}`)
+	axios.post(`https://syntics.co/testPlannings/Students-Grade-6/${id}`)
 		.then(res => res.data, )
 )
 
 
 export const getTestPlanningsForGrade7 = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/Students-Grade-7/${id}`)
+	axios.post(`https://syntics.co/testPlannings/Students-Grade-7/${id}`)
 		.then(res => res.data, )
 )
 
 
 export const getTestPlanningsForGrade8 = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/Students-Grade-8/${id}`)
+	axios.post(`https://syntics.co/testPlannings/Students-Grade-8/${id}`)
 		.then(res => res.data, )
 )
 
 export const getTestPlanningsForGrade9 = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/Students-Grade-9/${id}`)
+	axios.post(`https://syntics.co/testPlannings/Students-Grade-9/${id}`)
 		.then(res => res.data, )
 )
 
 export const getTestPlanningsForGrade10 = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/Students-Grade-10/${id}`)
+	axios.post(`https://syntics.co/testPlannings/Students-Grade-10/${id}`)
 		.then(res => res.data, )
 )
 
 export const getTestPlanningsForGrade11 = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/Students-Grade-11/${id}`)
+	axios.post(`https://syntics.co/testPlannings/Students-Grade-11/${id}`)
 		.then(res => res.data, )
 )
 
 export const getTestPlanningsForGrade12 = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/Students-Grade-12/${id}`)
+	axios.post(`https://syntics.co/testPlannings/Students-Grade-12/${id}`)
 		.then(res => res.data, )
 )
 //getting API for inserting the data
-export const createTestPlannings = (todo) => fetch("http://localhost:7000/testPlannings/create", {
+export const createTestPlannings = (todo) => fetch("https://syntics.co/testPlannings/create", {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -94,7 +94,7 @@ export const createTestPlannings = (todo) => fetch("http://localhost:7000/testPl
 })  
 
 //getting API for updating specific data
-export const updateTestPlannings = (todo, id) => fetch(`http://localhost:7000/testPlannings/${id}`, {
+export const updateTestPlannings = (todo, id) => fetch(`https://syntics.co/testPlannings/${id}`, {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -103,7 +103,7 @@ export const updateTestPlannings = (todo, id) => fetch(`http://localhost:7000/te
   body: JSON.stringify(todo)
 })  
 //getting API for deleting specific data
-export const deleteTestPlannings = (todo, id) => fetch(`http://localhost:7000/testPlannings/${id}`, {
+export const deleteTestPlannings = (todo, id) => fetch(`https://syntics.co/testPlannings/${id}`, {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -116,6 +116,6 @@ export const deleteTestPlannings = (todo, id) => fetch(`http://localhost:7000/te
 
 export const getTestPlanning = id => (
 	console.log(id),
-	axios.post(`http://localhost:7000/testPlannings/${id}`)
+	axios.post(`https://syntics.co/testPlannings/${id}`)
 		.then(res => res.data, )
 )

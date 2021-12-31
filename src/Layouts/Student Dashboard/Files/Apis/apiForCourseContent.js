@@ -1,9 +1,9 @@
 //getting API for showing all the data
 import axios from 'axios';
-export const getCourseContents = () => fetch("http://localhost:7000/coursePlannings").then(res => res.json())
+export const getCourseContents = () => fetch("https://syntics.co/coursePlannings").then(res => res.json())
 
 //getting API for inserting the data
-export const createCourseContents = (todo) => fetch("http://localhost:7000/coursePlannings/create", {
+export const createCourseContents = (todo) => fetch("https://syntics.co/coursePlannings/create", {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -13,7 +13,7 @@ export const createCourseContents = (todo) => fetch("http://localhost:7000/cours
 })  
 
 //getting API for updating specific data
-export const updateCourseContents = (todo, id) => fetch(`http://localhost:7000/${id}`, {
+export const updateCourseContents = (todo, id) => fetch(`https://syntics.co/${id}`, {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -23,4 +23,4 @@ export const updateCourseContents = (todo, id) => fetch(`http://localhost:7000/$
 })  
 
 //getting API for getting specific data
-export const getCourseContent = (id) => fetch(`http://localhost:7000/${id}`).then(res => res.json())
+export const getCourseContent = (id) => fetch(`https://syntics.co/${id}`).then(res => res.json())

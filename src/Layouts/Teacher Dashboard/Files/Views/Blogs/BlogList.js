@@ -25,7 +25,7 @@ function BlogListForTeacher() {
       })
     }
     const handleOnClickDelete = (data) => {
-      axios.delete('http://localhost:7000/blogs/delete/' + data._id)
+      axios.delete('https://syntics.co/blogs/delete/' + data._id)
             .then((res) => {
                 console.log('Student successfully deleted!')
                 window.location.reload(false)

@@ -34,7 +34,7 @@ class FileUploadNewForTeacherForBook extends Component {
 
   loadFiles() {
 
-    fetch('http://localhost:7000/api/files')
+    fetch('https://syntics.co/api/files')
       .then(res => res.json())
       .then(files => {
         if (files.message) {
@@ -66,7 +66,7 @@ class FileUploadNewForTeacherForBook extends Component {
     event.preventDefault();
     const id = event.target.id;
 
-    fetch('http://localhost:7000/api/files/'+id, {
+    fetch('https://syntics.co/api/files/'+id, {
       method: 'DELETE'
     }).then(res => res.json())
       .then(response => {

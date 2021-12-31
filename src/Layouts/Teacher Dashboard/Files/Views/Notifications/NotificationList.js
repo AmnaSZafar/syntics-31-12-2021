@@ -19,7 +19,7 @@ function NotificationListForTeacher() {
     const history = useHistory()
     const location = useLocation();
     const handleOnClickDelete = (data) => {
-      axios.delete('http://localhost:7000/notifications/delete/' + data._id)
+      axios.delete('https://syntics.co/notifications/delete/' + data._id)
             .then((res) => {
                 console.log('Student successfully deleted!')
                 window.location.reload(false)
