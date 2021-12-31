@@ -54,7 +54,7 @@
 
 .main__controls__button:hover {
     background-color: #343434;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .main__controls__button i {

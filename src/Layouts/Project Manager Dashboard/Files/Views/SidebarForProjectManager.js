@@ -24,19 +24,19 @@ const SidebarForProjectManager = (props) => {
       <div
       >
         <div>
-        <div className="sidebar" >
+        <div className="sidebar"  style={{ background: 'rgb(55,64,85)', background: 'linear-gradient(72deg, rgba(55,64,85,1) 28%, rgba(63,70,87,1) 59%, rgba(55,64,85,0.9416141456582633) 88%)', boxShadow: 'none' }} >
           <div className="sidebar-wrapper">
-            <Nav>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+            <Nav className="mt-4">
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/manager/gender-category/${id}`} 
                     >
                       <i className = "tim-icons icon-badge" />
                       <p>List of Students</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/manager/list-of-teachers/${id}`} 
                     >
@@ -44,8 +44,8 @@ const SidebarForProjectManager = (props) => {
                       <p>List of Teachers</p>
                     </NavLink>
                  
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/manager/list-of-projects/${id}`}
                     >
@@ -53,8 +53,8 @@ const SidebarForProjectManager = (props) => {
                       <p>List of Projects</p>
                     </NavLink>
                    
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/manager/progress-report-student-groups/${id}`}
                     >
@@ -62,16 +62,16 @@ const SidebarForProjectManager = (props) => {
                       <p>Progress Reports</p>
                     </NavLink>
                    
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/manager/query-list/${id}`}
                     >
                       <i className = "tim-icons icon-paper" />
                       <p>Queries</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/manager/chat-manager`}
                     >
@@ -79,8 +79,8 @@ const SidebarForProjectManager = (props) => {
                       <p>Syntics Chat</p>
                     </NavLink>
                   {/*}
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/manager/teacher-remarks/${id}`}
                     >

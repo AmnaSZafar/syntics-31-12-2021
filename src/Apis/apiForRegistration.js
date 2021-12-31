@@ -1,15 +1,15 @@
 //getting API for showing all the data
 import axios from 'axios';
 
-//export const getRegistrations = () => fetch("https://syntics.co/").then(res => res.json())
+//export const getRegistrations = () => fetch("http://localhost:7000/").then(res => res.json())
 export const getRegistrations = id => (
 	console.log(id),
-	axios.post(`https://syntics.co/`)
+	axios.post(`http://localhost:7000/`)
 		.then(res => res.data, )
 )
 
 //getting API for inserting the data
-export const createRegistrations = (todo) => fetch("https://syntics.co/students/create", {
+export const createRegistrations = (todo) => fetch("http://localhost:7000/students/create", {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -19,7 +19,7 @@ export const createRegistrations = (todo) => fetch("https://syntics.co/students/
 })  
 
 //getting API for updating specific data
-export const updateRegistrations = (todo, id) => fetch(`https://syntics.co/${id}`, {
+export const updateRegistrations = (todo, id) => fetch(`http://localhost:7000/${id}`, {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -29,16 +29,16 @@ export const updateRegistrations = (todo, id) => fetch(`https://syntics.co/${id}
 })  
 
 //getting API for getting specific data
-//export const getRegisterationStudents = (id) => fetch(`https://syntics.co/students/specific/${id}`).then(res => res.json())
+//export const getRegisterationStudents = (id) => fetch(`http://localhost:7000/students/specific/${id}`).then(res => res.json())
 export const getRegisterationStudents = id => (
 	console.log(id),
-	axios.post(`https://syntics.co/students/specific/${id}`)
+	axios.post(`http://localhost:7000/students/specific/${id}`)
 		.then(res => res.data, )
 		
 )
 export const getRegisterationStudentsById = id => (
 	console.log(id),
-	axios.post(`https://syntics.co/students/specific/id/${id}`)
+	axios.post(`http://localhost:7000/students/specific/id/${id}`)
 		.then(res => res.data, )
 )
-//export const getRegisterationStudentsById = (id) => fetch(`https://syntics.co/students/specific/id/${id}`).then(res => res.json())
+//export const getRegisterationStudentsById = (id) => fetch(`http://localhost:7000/students/specific/id/${id}`).then(res => res.json())

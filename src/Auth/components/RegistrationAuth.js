@@ -147,7 +147,7 @@ export default class RegistrationAuth extends Component {
             </div> <div className="buttons">
               <button
                 type="submit"
-                className="btn btn-outline-primary"
+                className="btn m-2 shadow-sm  btn-outline-muted"
                 disabled={user_name_taken}
               >
                 {' '}{REGISTRATION_FIELDS.REGISTER}{' '}

@@ -495,8 +495,8 @@ h6, .h6BlackDashboard {
 }
 
 .topbar .dropdown-list .dropdown-header {
-  background-color: #306EFF;
-  border: 1px solid #306EFF;
+  background-color: rgba(55, 64, 85, 0.9);
+  border: 1px solid rgba(55, 64, 85, 0.9);
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   color: #fff;
@@ -670,7 +670,7 @@ h6, .h6BlackDashboard {
 
 .sidebarBlackDashboard .nav-item .collapse .collapse-inner .collapse-item.active,
 .sidebarBlackDashboard .nav-item .collapsing .collapse-inner .collapse-item.active {
-  color: #306EFF;
+  color: rgba(55, 64, 85, 0.9);
   font-weight: 700;
 }
 
@@ -1183,7 +1183,7 @@ h6, .h6BlackDashboard {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #306EFF;
+  background-color: rgba(55, 64, 85, 0.9);
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -1216,7 +1216,7 @@ h6, .h6BlackDashboard {
 .custom-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #306EFF;
+  background-color: rgba(55, 64, 85, 0.9);
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -1252,7 +1252,7 @@ h6, .h6BlackDashboard {
   margin-top: 0;
   margin-right: 0.2rem;
   margin-left: 0.2rem;
-  background-color: #306EFF;
+  background-color: rgba(55, 64, 85, 0.9);
   border: 0;
   border-radius: 1rem;
   -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -1326,8 +1326,8 @@ h6, .h6BlackDashboard {
   }
 }
 .bg-gradient-primary {
-  background-color: #306EFF;
-  background-image: linear-gradient(180deg, #306EFF 10%, #306EFF 100%);
+  background-color: rgba(55, 64, 85, 0.9);
+  background-image: linear-gradient(180deg, rgba(55, 64, 85, 0.9) 10%, rgba(55, 64, 85, 0.9) 100%);
   background-size: cover;
 }
 

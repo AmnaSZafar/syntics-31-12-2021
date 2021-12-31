@@ -23,7 +23,7 @@ class FilesUploadComponent extends Component {
         e.preventDefault()
         const formData = new FormData()
         formData.append('profileImg', this.state.profileImg)
-        axios.post("https://syntics.co/api/user-profile", formData, {
+        axios.post("http://localhost:7000/api/user-profile", formData, {
         }).then(res => {
             console.log(res)
         })
@@ -39,13 +39,13 @@ class FilesUploadComponent extends Component {
         {/* Main Content */}
         <div id="content">
           {/* Begin Page Content */}
-          <div className="containerBlackDashboard-fluid">
+          <div className="containerBlackDashboard-fluid mt-5">
             {/* Page Heading */}
             
             {/* DataTales Example */}
-            <div className="card shadow mb-4 text-center">
-              <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                <h6 className="m-0 font-weight-bold text-white">Upload a File</h6>
+            <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
+              <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+                <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Upload a File</h5>
               </div>
               <div className="card-body">
                 <div>
@@ -55,7 +55,7 @@ class FilesUploadComponent extends Component {
                             <input type="file" onChange={this.onFileChange} />
                         </div>
                         <div className="">
-                        <button type="submit" className="btn btn-outline-primary" style = {{ fontWeight : "bold"}}>
+                        <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted" style = {{ fontWeight : "bold"}}>
                           Upload
                         </button>
                       </div>

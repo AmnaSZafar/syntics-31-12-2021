@@ -24,7 +24,7 @@ class FileUploadNewForTeacherForBook extends Component {
   }
 
   loadFiles() {
-    fetch('https://syntics.co/api/files')
+    fetch('http://localhost:7000/api/files')
       .then(res => res.json())
       .then(files => {
         if (files.message) {
@@ -87,14 +87,14 @@ class FileUploadNewForTeacherForBook extends Component {
 {/* Main Content */}
 <div id="content">
   {/* Begin Page Content */}
-  <div className="containerBlackDashboard-fluid">
+  <div className="containerBlackDashboard-fluid mt-5">
     {/* Page Heading */}
-    <h1 className="h3BlackDashboard mb-2 text-gray-800"></h1>
+    <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}></h1>
     
     {/* DataTales Example */}
-    <div className="card shadow ">
-      <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-        <h6 className="m-0 font-weight-bold text-white">Upload File</h6>
+    <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 ">
+      <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+        <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Upload File</h5>
       </div>
       <div className="card-body">
       <input type="file" onChange={this.fileChanged.bind(this)}/>

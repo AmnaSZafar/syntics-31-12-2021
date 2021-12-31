@@ -24,19 +24,19 @@ const SidebarForStudent = (props) => {
       <div
       >
         <div>
-        <div className="sidebar" >
+        <div className="sidebar"  style={{ background: 'rgb(55,64,85)', background: 'linear-gradient(72deg, rgba(55,64,85,1) 28%, rgba(63,70,87,1) 59%, rgba(55,64,85,0.9416141456582633) 88%)', boxShadow: 'none' }} >
           <div className="sidebar-wrapper">
-            <Nav>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+            <Nav className="mt-4">
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/admin/stats-category/${id}`} 
                     >
                       <i className = "tim-icons icon-badge" />
                       <p>Statistics</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/admin/teacher-info-table/${id}`} 
                     >
@@ -44,8 +44,8 @@ const SidebarForStudent = (props) => {
                       <p>Teacher Section</p>
                     </NavLink>
                  
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/admin/gender-category-student/${id}`}
                     >
@@ -53,16 +53,16 @@ const SidebarForStudent = (props) => {
                       <p>Student Section</p>
                     </NavLink>
 
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/admin/list-of-projects/${id}`}
                     >
                       <i className = "tim-icons icon-trophy" />
                       <p>Projects</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/admin/chat-admin`}
                     >
@@ -70,8 +70,8 @@ const SidebarForStudent = (props) => {
                       <p>Syntics Chat</p>
                     </NavLink>
                    {/*}
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={``}
                     >
@@ -79,8 +79,8 @@ const SidebarForStudent = (props) => {
                       <p>Blogs</p>
                     </NavLink>
                    
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={``}
                     >

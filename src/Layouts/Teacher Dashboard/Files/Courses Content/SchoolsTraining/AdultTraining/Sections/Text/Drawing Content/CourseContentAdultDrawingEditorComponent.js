@@ -133,25 +133,25 @@ function CourseContentDrawingEditorComponent() {
 {/* Main Content */}
 <div id="content">
   {/* Begin Page Content */}
-  <div className="containerBlackDashboard-fluid">
+  <div className="containerBlackDashboard-fluid mt-5">
     {/* Page Heading */}
-    <h1 className="h3BlackDashboard mb-2 text-gray-800">Course Planning</h1>
+    <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Course Planning</h1>
     {/* DataTales Example */}
-    <div className="card shadow mb-4 text-center">
-      <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-        <h6 className="m-0 font-weight-bold text-white"> Course Drawing Content Creation Panel</h6>
+    <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
+      <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+        <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}> Course Drawing Content Creation Panel</h5>
       </div>
       <div className="card-body">
-      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
-          <label><h6 className = "text-white">Upload Image for Content</h6></label>
+      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+          <label><h5 className = "text-white">Upload Image for Content</h5></label>
      </div>
       <input type="file" onChange={(e) => fileChanged(e)}/>
       </div>
       <div className="card-body">
       <form onSubmit={formik.handleSubmit}>
                   <div className = "mt-4"> 
-                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                          <label><h6 className = "text-white">Question's Title</h6></label>
+                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                          <label><h5 className = "text-white">Question's Title</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-light text-dark">
                       <input type="text" placeholder="Title for Question" name="questiontitle" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.questiontitle} className="form-control" required  />
@@ -160,8 +160,8 @@ function CourseContentDrawingEditorComponent() {
                       <hr />
                   </div>
                   <div className = "mt-4"> 
-                      <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
-                          <label><h6 className = "text-white">Please create your desired <b>Drawing</b> Question below</h6></label>
+                      <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                          <label><h5 className = "text-white">Please create your desired <b>Drawing</b> Question below</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-light text-dark">
                         <Editor
@@ -188,8 +188,8 @@ function CourseContentDrawingEditorComponent() {
                       <hr />
                   </div>
                   <div className = "mt-4"> 
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
-                            <label><h6 className = "text-white">Total Marks</h6></label>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                            <label><h5 className = "text-white">Total Marks</h5></label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
                               {/*2 put onChange = {formkit.handleChange} value={formik.values.name} in all the form fields with their corroposind name  in values */}
@@ -199,7 +199,7 @@ function CourseContentDrawingEditorComponent() {
                         <hr />
                     </div>
                     <div className="">
-                        <button type="submit" className="btn btn-outline-primary">
+                        <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted">
                           Create Question
                         </button>
                     </div>
@@ -211,7 +211,7 @@ function CourseContentDrawingEditorComponent() {
 </div>
 {/* End of Main Content */}
 {/* Footer */}
-<footer className="sticky-footer bg-white">
+<footer className="sticky-footer bg-transparent">
   <div className="containerBlackDashboard my-auto">
     <div className="copyright text-center my-auto">
       <span></span>

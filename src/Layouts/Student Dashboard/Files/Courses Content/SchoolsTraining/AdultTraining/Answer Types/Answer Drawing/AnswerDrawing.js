@@ -55,7 +55,7 @@ function AnswerDrawing() {
 const fileForCv = () => {
     axios({
         method: "POST",
-        url: `https://syntics.co/api/file/display/${file}`,
+        url: `http://localhost:7000/api/file/display/${file}`,
         responseType: "blob"
       })
         .then(res => rezzingFileForCv(res.data),)
@@ -181,19 +181,19 @@ const fileForCv = () => {
 {/* Main Content */}
 <div id="content">
   {/* Begin Page Content */}
-  <div className="containerBlackDashboard-fluid">
+  <div className="containerBlackDashboard-fluid mt-5">
     {/* Page Heading */}
-    <h1 className="h3BlackDashboard mb-2 text-gray-800">Course Content</h1>
+    <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Course Content</h1>
     {/* DataTales Example */}
-    <div className="card shadow mb-4 text-center">
-      <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-        <h6 className="m-0 font-weight-bold text-white">{location.state.questiontitle}</h6>
+    <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
+      <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+        <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>{location.state.questiontitle}</h5>
       </div>
       <div className="card-body">
       {location.state.questioncontent}
       <div>
-      <div className="card-header py-3 mt-4" style = {{color : "white", backgroundColor : "#306EFF"}}>
-        <h6 className="m-0 font-weight-bold text-white">Attachment</h6>
+      <div className="card-header py-3 mt-4" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+        <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Attachment</h5>
       </div>
       <div className = "mt-4">
       <img id = "audioReference" className = "text-dark" style={{textDecoration : "none", fontWeight: "bold", height:"300px", width:"400px", boxShadow: "5px 5px #888888"}}>
@@ -202,26 +202,26 @@ const fileForCv = () => {
       </div>
       </div>
     </div>
-    <div className="card shadow mb-4 text-center">
-      <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-        <h6 className="m-0 font-weight-bold text-white">Answer</h6>
+    <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
+      <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+        <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Answer</h5>
         
       </div>
       <div className="card-body">
       <form onSubmit={formik.handleSubmit}>
                   <div className = "mt-4"> 
-                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                          <label><h6 className = "text-white">Your Answer </h6></label>
+                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                          <label><h5 className = "text-white">Your Answer </h5></label>
                       </div>
                       <div className="containerSass mt-3 mb-2">
-                        <button className="btn btn-outline-primary" onClick={(e) => drawPage(e)}>
+                        <button className="btn m-2 shadow-sm  btn-outline-muted" onClick={(e) => drawPage(e)}>
                         Start Drawing
                         </button>
                     </div>
                       <hr />
                   </div>
                     <div className="containerSass mt-3 mb-2">
-                        <button type="submit" className="btn btn-outline-primary">
+                        <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted">
                         Submit Answer
                         </button>
                     </div>
@@ -233,7 +233,7 @@ const fileForCv = () => {
 </div>
 {/* End of Main Content */}
 {/* Footer */}
-<footer className="sticky-footer bg-white">
+<footer className="sticky-footer bg-transparent">
   <div className="containerBlackDashboard my-auto">
     <div className="copyright text-center my-auto">
       <span></span>

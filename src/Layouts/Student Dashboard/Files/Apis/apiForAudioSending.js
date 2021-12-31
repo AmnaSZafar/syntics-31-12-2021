@@ -1,21 +1,21 @@
 //getting API for showing all the data
 import axios from 'axios';
-//export const getRegistrations = () => fetch("https://syntics.co/").then(res => res.json())
+//export const getRegistrations = () => fetch("http://localhost:7000/").then(res => res.json())
 export const getRegistrations = id => (
 	console.log(id),
-	axios.post(`https://syntics.co/`)
+	axios.post(`http://localhost:7000/`)
 		.then(res => res.data, )
 )
 
 
 //getting API for inserting the data
-export const createAudioFile = (todo) => fetch("https://syntics.co/api/files", {
+export const createAudioFile = (todo) => fetch("http://localhost:7000/api/files", {
   method: "POST",
   body: todo
 })  
 
 //getting API for updating specific data
-export const updateRegistrations = (todo, id) => fetch(`https://syntics.co/${id}`, {
+export const updateRegistrations = (todo, id) => fetch(`http://localhost:7000/${id}`, {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -25,9 +25,9 @@ export const updateRegistrations = (todo, id) => fetch(`https://syntics.co/${id}
 })  
 
 //getting API for getting specific data
-//export const getRegisteration = (id) => fetch(`https://syntics.co/${id}`).then(res => res.json())
+//export const getRegisteration = (id) => fetch(`http://localhost:7000/${id}`).then(res => res.json())
 export const getRegisteration = id => (
 	console.log(id),
-	axios.post(`https://syntics.co/${id}`)
+	axios.post(`http://localhost:7000/${id}`)
 		.then(res => res.data, )
 )

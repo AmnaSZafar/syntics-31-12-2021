@@ -6,7 +6,7 @@ import './style.css';
 class BoardForTeacher extends React.Component {
 
     timeout;
-    socket = io.connect("https://syntics.co");
+    socket = io.connect("http://localhost:7000");
 
     ctx;
     isDrawing = false;

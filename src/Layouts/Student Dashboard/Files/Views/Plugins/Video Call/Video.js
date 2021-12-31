@@ -20,7 +20,7 @@ import Modal from 'react-bootstrap/Modal'
 //import 'bootstrap/dist/css/bootstrap.css'
 import "./Video.css"
 
-const server_url = process.env.NODE_ENV === 'production' ? 'https://syntics.co' : "https://syntics.co"
+const server_url = process.env.NODE_ENV === 'production' ? 'http://localhost:7000' : "http://localhost:7000"
 
 var connections = {}
 const peerConnectionConfig = {

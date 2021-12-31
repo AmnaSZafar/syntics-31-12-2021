@@ -17,7 +17,7 @@ function AnswerQueryForAdmin() {
         location.state.queryAnswerContent = contentFromTextArea
         updateContact(location.state, location.state._id)
         console.log(location.state)
-        fetch(`https://syntics.co/email`, {
+        fetch(`http://localhost:7000/email`, {
           method: "POST",
           headers: {
             "Accept": "application/json",
@@ -94,7 +94,7 @@ function AnswerQueryForAdmin() {
             <form onSubmit={formik.handleSubmit}>
                   <div className = "mt-4"> 
                       <div class="p-3 mb-2 bg-light text-dark">
-                          <label ><h6 className="m-0 font-weight-bold text-white">Query's Title</h6></label>
+                          <label ><h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Query's Title</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-dark text-white">
                       <input type="text" placeholder="Title for Query Answerin" name="queryAnswerTitle" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.queryAnswerTitle} className="form-control" required  />
@@ -104,7 +104,7 @@ function AnswerQueryForAdmin() {
                   </div>
                   <div className = "mt-4"> 
                       <div class="p-3 mb-2 bg-light text-dark">
-                          <label ><h6 className="m-0 font-weight-bold text-white">Please create your desired <b>Query</b> answer below</h6></label>
+                          <label ><h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Please create your desired <b>Query</b> answer below</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-dark text-white">
                         <Editor

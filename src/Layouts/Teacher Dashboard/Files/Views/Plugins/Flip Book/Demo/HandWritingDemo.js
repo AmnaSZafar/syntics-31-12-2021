@@ -172,12 +172,12 @@ function HandWritingDemoStudentsLinguistics() {
         {/* Main Content */}
         <div id="content">
           {/* Begin Page Content */}
-          <div className="containerBlackDashboard-fluid">
+          <div className="containerBlackDashboard-fluid mt-5">
             {/* Page Heading */}
             <h1 className="h3BlackDashboard text-gray-800"></h1>
             {/* DataTales Example */}
-            <div className="card shadow text-center">
-              <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
+            <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 text-center">
+              <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
               </div>
               <div className="card-body">
                 <div>

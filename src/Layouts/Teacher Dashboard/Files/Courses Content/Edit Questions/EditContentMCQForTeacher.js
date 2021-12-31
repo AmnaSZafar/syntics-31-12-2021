@@ -133,19 +133,19 @@ function EditContentMCQForTeacher() {
 {/* Main Content */}
 <div id="content">
   {/* Begin Page Content */}
-  <div className="containerBlackDashboard-fluid">
+  <div className="containerBlackDashboard-fluid mt-5">
     {/* Page Heading */}
-    <h1 className="h3BlackDashboard mb-2 text-gray-800">Course Planning</h1>
+    <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Course Planning</h1>
     {/* DataTales Example */}
-    <div className="card shadow mb-4 text-center">
-      <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-        <h6 className="m-0 font-weight-bold text-white">  MCQ Content Creation Panel</h6>
+    <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
+      <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+        <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>  MCQ Content Creation Panel</h5>
       </div>
       <div className="card-body">
       <form onSubmit={formik.handleSubmit}>
                   <div className = "mt-4"> 
-                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                          <label><h6 className = "text-white">Question's Title</h6></label>
+                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                          <label><h5 className = "text-white">Question's Title</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-light text-dark">
                       <input type="text" placeholder="Title for Question" name="questiontitle" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.questiontitle} className="form-control" required  />
@@ -154,8 +154,8 @@ function EditContentMCQForTeacher() {
                       <hr />
                   </div>
                   <div className = "mt-4"> 
-                      <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
-                        <label ><h6 className="m-0 font-weight-bold text-white">Please create your desired <b>MCQ</b> Question below</h6></label>
+                      <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                        <label ><h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Please create your desired <b>MCQ</b> Question below</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-light text-dark">
                         <Editor
@@ -183,8 +183,8 @@ function EditContentMCQForTeacher() {
                   </div>
                   </form>
                   <div className = "mt-4"> 
-                      <div class="p-3 mb-2  text-left" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                          <label ><h6 className="m-0 font-weight-bold text-white ">Options</h6></label>
+                      <div class="p-3 mb-2  text-left" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                          <label ><h5 className="m-0 font-weight-bold text-white ">Options</h5></label>
                           <p className = "text-left"><b>Original Options: </b></p>
                           {originalOptions()}
                           <br />
@@ -200,17 +200,17 @@ function EditContentMCQForTeacher() {
                                     name="options"
                                     placeholder="Enter Option"
                                     value={x.options}
-                                    onChange={e => handleInputChange(e, i)}
+                                    onChange={e => handleInputChange(e, i)} className="form-control border-0 shadow-sm"
                             />
                             <div className="btn-box">
                                 {inputList.length !== 1 && <div >
-                            <button type="submit" className="btn btn-outline-primary" onClick={() => handleRemoveClick(i)}>
+                            <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted" onClick={() => handleRemoveClick(i)} style = {{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>
                               Remove Option
                             </button>
                             </div>}
                                 
                                 {inputList.length - 1 === i &&  <div >
-                            <button type="submit" className="btn btn-outline-primary" onClick={handleAddClick}>
+                            <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted" onClick={handleAddClick} style = {{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>
                               Add Option
                             </button>
                             </div>}
@@ -223,8 +223,8 @@ function EditContentMCQForTeacher() {
                   </div>
                   <form onSubmit={formik.handleSubmit}>
                   <div className = "mt-4"> 
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
-                            <label><h6 className = "text-white">Total Marks</h6></label>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                            <label><h5 className = "text-white">Total Marks</h5></label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
                               {/*2 put onChange = {formkit.handleChange} value={formik.values.name} in all the form fields with their corroposind name  in values */}
@@ -234,7 +234,7 @@ function EditContentMCQForTeacher() {
                         <hr />
                     </div>
                     <div className="">
-                        <button type="submit" className="btn btn-outline-primary">
+                        <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted">
                           Save Changes
                         </button>
                     </div>
@@ -247,7 +247,7 @@ function EditContentMCQForTeacher() {
 </div>
 {/* End of Main Content */}
 {/* Footer */}
-<footer className="sticky-footer bg-white">
+<footer className="sticky-footer bg-transparent">
   <div className="containerBlackDashboard my-auto">
     <div className="copyright text-center my-auto">
       <span></span>

@@ -74,18 +74,18 @@ function ViewCurrentAnswerForStudentsForAssignment() {
 {/* Main Content */}
 <div id="content">
 {/* Begin Page Content */}
-<div className="containerBlackDashboard-fluid">
+<div className="containerBlackDashboard-fluid mt-5">
   {/* Page Heading */}
-  <h1 className="h3BlackDashboard mb-2 text-gray-800">Content</h1>
+  <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Content</h1>
   
   {/* DataTales Example */}
-  <div className="card shadow mb-4">
-    <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-      <h6 className="m-0 font-weight-bold text-white">View Clicked Content</h6>
+  <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4">
+    <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+      <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>View Clicked Content</h5>
     </div>
     <div className="card-body">
     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Course Type</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -94,7 +94,7 @@ function ViewCurrentAnswerForStudentsForAssignment() {
                         <hr />
                     </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Answer Type</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -104,7 +104,7 @@ function ViewCurrentAnswerForStudentsForAssignment() {
                     </div>
                     <div>
                             <div className = "mt-4">
-                                <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                                <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                                     <label >Start Date</label>
                                 </div>
                                 <div class="p-3 mb-2 bg-light text-dark">
@@ -113,7 +113,7 @@ function ViewCurrentAnswerForStudentsForAssignment() {
                                 <hr />
                             </div>
                             <div className = "mt-4">
-                                <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                                <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                                     <label >End Date</label>
                                 </div>
                                 <div class="p-3 mb-2 bg-light text-dark">
@@ -124,7 +124,7 @@ function ViewCurrentAnswerForStudentsForAssignment() {
                        
                             </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Question Title</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -133,7 +133,7 @@ function ViewCurrentAnswerForStudentsForAssignment() {
                         <hr />
                     </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Question Content</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -142,7 +142,7 @@ function ViewCurrentAnswerForStudentsForAssignment() {
                         <hr />
                     </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Answer Content</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -151,7 +151,7 @@ function ViewCurrentAnswerForStudentsForAssignment() {
                         <hr />
                     </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Total Marks</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -160,7 +160,7 @@ function ViewCurrentAnswerForStudentsForAssignment() {
                         <hr />
                     </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Marks Obtained</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -169,7 +169,7 @@ function ViewCurrentAnswerForStudentsForAssignment() {
                         <hr />
                     </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Teacher's Comment</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -186,7 +186,7 @@ function ViewCurrentAnswerForStudentsForAssignment() {
 </div>
 {/* End of Main Content */}
 {/* Footer */}
-<footer className="sticky-footer bg-white">
+<footer className="sticky-footer bg-transparent">
 <div className="containerBlackDashboard my-auto">
   <div className="copyright text-center my-auto">
     <span></span>

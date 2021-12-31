@@ -1333,11 +1333,11 @@ table {
 
 .sidebar,
 .off-canvas-sidebar {
-  background: #306EFF;
-  background: -webkit-linear-gradient(0deg, #306EFF 0%, #306EFF 100%);
-  background: -o-linear-gradient(0deg, #306EFF 0%, #306EFF 100%);
-  background: -moz-linear-gradient(0deg, #306EFF 0%, #306EFF 100%);
-  background: linear-gradient(0deg, #306EFF 0%, #306EFF 100%);
+  background: rgba(55, 64, 85, 0.9);
+  background: -webkit-linear-gradient(0deg, rgba(55, 64, 85, 0.9) 0%, rgba(55, 64, 85, 0.9) 100%);
+  background: -o-linear-gradient(0deg, rgba(55, 64, 85, 0.9) 0%, rgba(55, 64, 85, 0.9) 100%);
+  background: -moz-linear-gradient(0deg, rgba(55, 64, 85, 0.9) 0%, rgba(55, 64, 85, 0.9) 100%);
+  background: linear-gradient(0deg, rgba(55, 64, 85, 0.9) 0%, rgba(55, 64, 85, 0.9) 100%);
   height: calc(100vh - 90px);
   width: 230px;
   position: fixed;
@@ -1350,7 +1350,7 @@ table {
   box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.6);
   margin-top: 80px;
   margin-left: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   transition: 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1); }
   .sidebar .sidebar-wrapper,
   .off-canvas-sidebar .sidebar-wrapper {
@@ -1453,7 +1453,7 @@ table {
     .sidebar .nav li > a,
     .off-canvas-sidebar .nav li > a {
       margin: 10px 15px 0;
-      border-radius: 30px;
+      border-radius: 15px;
       color: #ffffff;
       display: block;
       text-decoration: none;
@@ -1698,7 +1698,7 @@ table {
   float: right;
   width: 100%;
   min-height: 100vh;
-  border-top: 2px solid #306EFF;
+  border-top: 2px solid rgba(55, 64, 85, 0.9);
   background: linear-gradient(#1e1e2f, #1e1e24);
   -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
@@ -1710,7 +1710,7 @@ table {
   .main-panel[data="green"] {
     border-top: 2px solid #00f2c3; }
   .main-panel[data="primary"] {
-    border-top: 2px solid #306EFF; }
+    border-top: 2px solid rgba(55, 64, 85, 0.9); }
   .main-panel > .content {
     padding: 78px 30px 30px 280px;
     min-height: calc(100vh - 70px); }

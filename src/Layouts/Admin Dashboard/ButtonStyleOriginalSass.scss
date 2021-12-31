@@ -21,7 +21,7 @@ $bg-color: #fff;
 	display: none;
 }
 .buttonTestimonialButton {
-	border: 2px solid #306EFF;
+	border: 2px solid rgba(55, 64, 85, 0.9);
 	&:focus {
 		border: none;
 		outline: 0 !important;
@@ -144,6 +144,6 @@ $bg-color: #fff;
 }
 
 .containerTestimonialButton button:hover {
-	background: #306EFF;
+	background: rgba(55, 64, 85, 0.9);
 	color: #fff;
   }

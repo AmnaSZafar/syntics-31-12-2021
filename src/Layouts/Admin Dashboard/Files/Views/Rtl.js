@@ -199,7 +199,7 @@ function Rtl() {
           <Col className="text-center" lg="6" sm="6">
             <Card className="card-tasks text-left">
               <CardHeader className="text-right">
-                <h6 className="title d-inline">تتبع</h6>{" "}
+                <h5 className="title d-inline">تتبع</h5>{" "}
                 <p className="card-category d-inline">اليوم</p>
                 <UncontrolledDropdown className="float-left">
                   <DropdownToggle

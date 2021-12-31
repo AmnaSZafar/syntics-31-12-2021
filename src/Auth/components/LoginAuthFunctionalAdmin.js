@@ -118,7 +118,7 @@ function LoginAuthFunctionalAdmin() {
                   <button
                     type="button"
                     onClick={(e) => onSubmit(e)}
-                    className="btn btn-outline-primary"
+                    className="btn m-2 shadow-sm  btn-outline-muted"
                   >
                     {' '}
                       {LOGIN_FIELDS.LOGIN}    {' '}

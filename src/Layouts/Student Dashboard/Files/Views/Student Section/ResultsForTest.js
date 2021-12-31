@@ -88,14 +88,14 @@ function ResultsForTestForStudents() {
 {/* Main Content */}
 <div id="content">
   {/* Begin Page Content */}
-  <div className="containerBlackDashboard-fluid">
+  <div className="containerBlackDashboard-fluid mt-5">
     {/* Page Heading */}
-    <h1 className="h3BlackDashboard mb-2 text-gray-800">Results Of Tests</h1>
+    <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Results Of Tests</h1>
     
     {/* DataTales Example */}
-    <div className="card shadow mb-4">
-      <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-        <h6 className="m-0 font-weight-bold text-white">List of Answers to Test Questions</h6>
+    <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4">
+      <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+        <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>List of Answers to Test Questions</h5>
       </div>
       <div className="card-body">
         <div className="table-responsive">
@@ -131,7 +131,7 @@ function ResultsForTestForStudents() {
                                 
                                   <td>
                                     <div className="">
-                                      <button className="btn btn-outline-primary"   onClick={() => handleOnClick(contents)}>View</button>
+                                      <button className="btn m-2 shadow-sm  btn-outline-muted"   onClick={() => handleOnClick(contents)}>View</button>
                                     </div>
                                   </td>
                                   </tr>
@@ -157,7 +157,7 @@ function ResultsForTestForStudents() {
 </div>
 {/* End of Main Content */}
 {/* Footer */}
-<footer className="sticky-footer bg-white">
+<footer className="sticky-footer bg-transparent">
   <div className="containerBlackDashboard my-auto">
     <div className="copyright text-center my-auto">
       <span></span>

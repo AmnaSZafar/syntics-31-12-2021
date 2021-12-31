@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const LoginServiceTeacher = data => (
 	console.log(data, "teacher"),
-	axios.post('https://syntics.co/teachers/login', data)
+	axios.post('http://localhost:7000/teachers/login', data)
 		.then(res => res.status, )
 		
 )

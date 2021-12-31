@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const getOneFile = filename => (
 	console.log(filename),
-	axios.post(`https://syntics.co/api/findOne/files/${filename}`)
+	axios.post(`http://localhost:7000/api/findOne/files/${filename}`)
 		.then(res => res.data, )
 )
 /*

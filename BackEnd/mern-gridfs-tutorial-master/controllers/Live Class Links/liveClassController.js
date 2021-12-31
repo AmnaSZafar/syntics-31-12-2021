@@ -8,7 +8,7 @@ var { LiveClassSchema } = require('../../models/Live Class Links/LiveClassSchema
 
  //Now to use router.ger to use properties of the schema like find collection, post collection, etc
 
- //To use this post requeest we need to type https://syntics.co/employees/, this is coming from index.js 
+ //To use this post requeest we need to type http://localhost:7000/employees/, this is coming from index.js 
  //Where its mentioned /employees is the router
 /*
  router.post('/', (req, res) => {

@@ -14,17 +14,17 @@ function Testing() {
         {/* Main Content */}
         <div id="content">
           {/* Begin Page Content */}
-          <div className="containerBlackDashboard-fluid">
+          <div className="containerBlackDashboard-fluid mt-5">
             {/* Page Heading */}
-            <h1 className="h3BlackDashboard mb-2 text-gray-800">Testimonial Creation Panel</h1>
+            <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Testimonial Creation Panel</h1>
             {/* DataTales Example */}
-            <div className="card shadow mb-4 text-center">
-              <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                <h6 className="m-0 font-weight-bold text-white">Create Testimonial</h6>
+            <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
+              <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+                <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Create Testimonial</h5>
               </div>
               <div className="card-body">
                 <div>
-                 <a href = "https://syntics.co/testing">   
+                 <a href = "http://localhost:7000/testing">   
                 <button className = "btn btn-dark">Click to Check Python</button>
                 </a>
                 </div>
@@ -35,7 +35,7 @@ function Testing() {
         </div>
         {/* End of Main Content */}
         {/* Footer */}
-        <footer className="sticky-footer bg-white">
+        <footer className="sticky-footer bg-transparent">
           <div className="containerBlackDashboard my-auto">
             <div className="copyright text-center my-auto">
               <span></span>

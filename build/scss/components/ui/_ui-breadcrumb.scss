@@ -2,7 +2,7 @@
     padding: 0.9375rem 1.25rem;
     background: $white;
     margin-bottom: 30px;
-    border-radius: 5px;
+    border-radius: 15px;
     @at-root [data-theme-version="dark"] & {
         background: $dark-card;
     }

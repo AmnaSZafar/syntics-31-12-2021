@@ -339,7 +339,7 @@ export default class Home extends Component{
                             </button> */}
                           </p>
                           {/* <div className="collapse" id="collapseExample">
-                            <div className="card card-body">
+                            <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  card-body">
                               During the course of ONE YEAR, students will have to pass multiple levels.
                               <b>Level 1</b>
                               Understanding Data Structures <br />
@@ -437,7 +437,7 @@ export default class Home extends Component{
 
                           </p>
                           {/* <div className="collapse" id="collapseExample2">
-                            <div className="card card-body">
+                            <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  card-body">
                               During the course of ONE YEAR, students will have to pass multiple levels.
                               <b>Level 1</b><br />
                               Math Foundations: <br />

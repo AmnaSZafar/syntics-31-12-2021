@@ -95,7 +95,7 @@ export default class LoginAuth extends Component {
               <button
                 type="button"
                 onClick={this.onSubmit}
-                className="btn btn-outline-primary"
+                className="btn m-2 shadow-sm  btn-outline-muted"
               >
                 {' '}
                   {LOGIN_FIELDS.LOGIN}    {' '}

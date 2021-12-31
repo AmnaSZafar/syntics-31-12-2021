@@ -199,7 +199,7 @@ function Dashboard(props) {
           <Col lg="6" md="12">
             <Card className="card-tasks">
               <CardHeader>
-                <h6 className="title d-inline">Tasks(5)</h6>
+                <h5 className="title d-inline">Tasks(5)</h5>
                 <p className="card-category d-inline"> today</p>
                 <UncontrolledDropdown>
                   <DropdownToggle

@@ -36,7 +36,7 @@ function NewSideBar() {
           </Link>
           <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div className="bg-white py-2 collapse-inner rounded">
-              <h6 className="collapse-header">Custom Components:</h6>
+              <h5 className="collapse-header">Custom Components:</h5>
               <Link className="collapse-item" href="buttons.html">Buttons</Link>
               <Link className="collapse-item" href="cards.html">Cards</Link>
             </div>
@@ -50,7 +50,7 @@ function NewSideBar() {
           </Link>
           <div id="collapseUtilities" className="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div className="bg-white py-2 collapse-inner rounded">
-              <h6 className="collapse-header">Custom Utilities:</h6>
+              <h5 className="collapse-header">Custom Utilities:</h5>
               <Link className="collapse-item" href="utilities-color.html">Colors</Link>
               <Link className="collapse-item" href="utilities-border.html">Borders</Link>
               <Link className="collapse-item" href="utilities-animation.html">Animations</Link>
@@ -72,12 +72,12 @@ function NewSideBar() {
           </Link>
           <div id="collapsePages" className="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div className="bg-white py-2 collapse-inner rounded">
-              <h6 className="collapse-header">Login Screens:</h6>
+              <h5 className="collapse-header">Login Screens:</h5>
               <Link className="collapse-item" href="login.html">Login</Link>
               <Link className="collapse-item" href="register.html">Register</Link>
               <Link className="collapse-item" href="forgot-password.html">Forgot Password</Link>
               <div className="collapse-divider" />
-              <h6 className="collapse-header">Other Pages:</h6>
+              <h5 className="collapse-header">Other Pages:</h5>
               <Link className="collapse-item" href="404.html">404 Page</Link>
               <Link className="collapse-item" href="blank.html">Blank Page</Link>
             </div>

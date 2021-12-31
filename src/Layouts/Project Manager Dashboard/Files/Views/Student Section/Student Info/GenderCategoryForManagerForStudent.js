@@ -36,27 +36,27 @@ function GenderCategoryForManagerForStudent() {
 {/* Main Content */}
 <div id="content">
 {/* Begin Page Content */}
-<div className="containerBlackDashboard-fluid">
+<div className="containerBlackDashboard-fluid mt-5">
 {/* Page Heading */}
-<h1 className="h3BlackDashboard mb-2 text-gray-800">Category of Gender</h1>
+<h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Category of Gender</h1>
 
 {/* DataTales Example */}
-<div className="card shadow mb-4">
-<div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-<h6 className="m-0 font-weight-bold text-white">Select A Category</h6>
+<div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4">
+<div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+<h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Select A Category</h5>
 </div>
 <div className="card-body">
 <Row className="mt-3">
     <Col md="6">
     <div className = "text-center">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold", width: "100px", height:"100px"}} value = "Male" onClick={(e) => handleOnClick(e)}>
+                            <button className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold", width: "100px", height:"100px"}} value = "Male" onClick={(e) => handleOnClick(e)}>
                             Male <br /> Students
                             </button>
                           </div>
       </Col>
       <Col md="6">
       <div className = "text-center">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold", width: "100px", height:"100px" }} value = "Female" onClick={(e) => handleOnClick(e)}>
+                            <button className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold", width: "100px", height:"100px" }} value = "Female" onClick={(e) => handleOnClick(e)}>
                             Female <br /> Students
                             </button>
                           </div>
@@ -71,7 +71,7 @@ function GenderCategoryForManagerForStudent() {
 </div>
 {/* End of Main Content */}
 {/* Footer */}
-<footer className="sticky-footer bg-white">
+<footer className="sticky-footer bg-transparent">
 <div className="containerBlackDashboard my-auto">
 <div className="copyright text-center my-auto">
 <span></span>

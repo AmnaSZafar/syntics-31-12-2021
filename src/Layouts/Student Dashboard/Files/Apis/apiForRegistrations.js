@@ -3,12 +3,12 @@ import axios from 'axios';
 
 export const getRegistrations = id => (
 	console.log(id),
-	axios.post(`https://syntics.co/students`)
+	axios.post(`http://localhost:7000/students`)
 		.then(res => res.data, )
 		
 )
 //getting API for inserting the data
-export const createRegistrations= (todo) => fetch("https://syntics.co/students/create", {
+export const createRegistrations= (todo) => fetch("http://localhost:7000/students/create", {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -18,7 +18,7 @@ export const createRegistrations= (todo) => fetch("https://syntics.co/students/c
 })  
 
 //getting API for updating specific data
-export const updateRegistration = (todo, id) => fetch(`https://syntics.co/${id}`, {
+export const updateRegistration = (todo, id) => fetch(`http://localhost:7000/${id}`, {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -28,17 +28,17 @@ export const updateRegistration = (todo, id) => fetch(`https://syntics.co/${id}`
 })  
 
 //getting API for getting specific data
-export const getRegistration = (id) => fetch(`https://syntics.co/students${id}`).then(res => res.json())
+export const getRegistration = (id) => fetch(`http://localhost:7000/students${id}`).then(res => res.json())
 
 export const getRegisterationStudents = id => (
 	console.log(id),
-	axios.post(`https://syntics.co/students/specific/${id}`)
+	axios.post(`http://localhost:7000/students/specific/${id}`)
 		.then(res => res.data, )
 		
 )
 
 export const getRegisterationStudentsById = id => (
 	console.log(id),
-	axios.post(`https://syntics.co/students/specific/id/${id}`)
+	axios.post(`http://localhost:7000/students/specific/id/${id}`)
 		.then(res => res.data, )
 )

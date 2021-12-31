@@ -17,7 +17,7 @@ export default class ResettPasswordRequestAuth extends Component {
     this.setState({ sendingEmail: true });
 
     
-    fetch(`https://syntics.co/emailForPassword`, {
+    fetch(`http://localhost:7000/emailForPassword`, {
       method: "POST",
       headers: {
         "Accept": "application/json",

@@ -50,41 +50,41 @@ function SubjectCategoryForStudents() {
 {/* Main Content */}
 <div id="content">
 {/* Begin Page Content */}
-<div className="containerBlackDashboard-fluid">
+<div className="containerBlackDashboard-fluid mt-5">
 {/* Page Heading */}
-<h1 className="h3BlackDashboard mb-2 text-gray-800">List of Subjects</h1>
+<h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>List of Subjects</h1>
 
 {/* DataTales Example */}
-<div className="card shadow mb-4">
-<div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-<h6 className="m-0 font-weight-bold text-white">Select A Subject For Teacher</h6>
+<div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4">
+<div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+<h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Select A Subject For Teacher</h5>
 </div>
 <div className="card-body">
 <Row className="mt-3">
     <Col md="3">
     <div className="containerCard mt-3 mb-3">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "English" onClick = {(e) => handleOnClick(e)} >
+                            <button className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "English" onClick = {(e) => handleOnClick(e)} >
                               English
                             </button>
                           </div>
       </Col>
       <Col md="3">
     <div className="containerCard mt-3 mb-3">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Urdu" onClick = {(e) => handleOnClick(e)} >
+                            <button className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Urdu" onClick = {(e) => handleOnClick(e)} >
                               Urdu
                             </button>
                           </div>
       </Col>
       <Col md="3">
     <div className="containerCard mt-3 mb-3">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Math" onClick = {(e) => handleOnClick(e)} >
+                            <button className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Math" onClick = {(e) => handleOnClick(e)} >
                               Math
                             </button>
                           </div>
       </Col>
       <Col md="3">
     <div className="containerCard mt-3 mb-3">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Science" onClick = {(e) => handleOnClick(e)} >
+                            <button className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Science" onClick = {(e) => handleOnClick(e)} >
                               Science
                             </button>
                           </div>
@@ -93,28 +93,28 @@ function SubjectCategoryForStudents() {
       <Row className="mt-3">
     <Col md="3">
     <div className="containerCard mt-3 mb-3">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Computer Science" onClick = {(e) => handleOnClick(e)} >
+                            <button className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Computer Science" onClick = {(e) => handleOnClick(e)} >
                             Computer <br /> Science 
                             </button>
                           </div>
       </Col>
       <Col md="3">
     <div className="containerCard mt-3 mb-3">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Islamiyat" onClick = {(e) => handleOnClick(e)} >
+                            <button className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Islamiyat" onClick = {(e) => handleOnClick(e)} >
                               Islamiyat
                             </button>
                           </div>
       </Col>
       <Col md="3">
     <div className="containerCard mt-3 mb-3">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Social Studies" onClick = {(e) => handleOnClick(e)} >
+                            <button className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Social Studies" onClick = {(e) => handleOnClick(e)} >
                               Social <br /> Studies
                             </button>
                           </div>
       </Col>
       <Col md="3">
     <div className="containerCard mt-3 mb-3">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Art" onClick = {(e) => handleOnClick(e)} >
+                            <button className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold", height : "100px", width : "100px" }} value = "Art" onClick = {(e) => handleOnClick(e)} >
                               Art
                             </button>
                           </div>
@@ -129,7 +129,7 @@ function SubjectCategoryForStudents() {
 </div>
 {/* End of Main Content */}
 {/* Footer */}
-<footer className="sticky-footer bg-white">
+<footer className="sticky-footer bg-transparent">
 <div className="containerBlackDashboard my-auto">
 <div className="copyright text-center my-auto">
 <span></span>

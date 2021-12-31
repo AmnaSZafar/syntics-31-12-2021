@@ -68,7 +68,7 @@ const customStyles = {
     
         return (
           <div>
-            <button type="button" className="btn btn-outline-primary" onClick={this.toggleModal(MODAL_B)}>Record Audio Through Your Mic</button>
+            <button type="button" className="btn m-2 shadow-sm  btn-outline-muted" onClick={this.toggleModal(MODAL_B)}>Record Audio Through Your Mic</button>
             <Modal
               ref="mymodal2"
               id="test2"

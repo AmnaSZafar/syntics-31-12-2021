@@ -26,7 +26,7 @@ class FilesUploadComponentForStudent extends Component {
         console.log(formData, "formData")
         console.log(FormData, "FormData")
         
-        axios.post("https://syntics.co/api/user-profile", formData, {
+        axios.post("http://localhost:7000/api/user-profile", formData, {
         }).then(res => {
             console.log(res)
         })
@@ -48,7 +48,7 @@ class FilesUploadComponentForStudent extends Component {
                             <input type="file" onChange={this.onFileChange} />
                         </div>
                         <div className="form-group">
-                            <button className="btn btn-outline-primary" type="submit">Upload</button>
+                            <button className="btn m-2 shadow-sm  btn-outline-muted" type="submit">Upload</button>
                         </div>
                     </form>
                     </div>

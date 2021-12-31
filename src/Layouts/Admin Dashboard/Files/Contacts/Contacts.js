@@ -24,14 +24,16 @@ function ContactsForAdmin() {
     return (
         <>
       <div className="content">
-        <Row>
+        <Row className='my-5'>
           <Col md="12">
-            <Card className="card-plain">
-              <CardHeader>contacts</CardHeader>
+          <h2 className='text-center display-2 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Contacts</h2>
+            
+            <Card className="card-plain border-0">
+              {/* <CardHeader>contacts</CardHeader> */}
               <CardBody>
-                <div className="container text-center">
+                <div className="container my-5 text-center">
                     <div className="mt-3">
-                        <h3>Query List</h3>
+                        <h3  className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Query List</h3>
                         <table className="table table-striped mt-3">
                         <thead>
                             <tr>

@@ -291,10 +291,10 @@ function HandwritingSubjectForFlipBook() {
 {/* Main Content */}
 <div id="content">
   {/* Begin Page Content */}
-  <div className="containerBlackDashboard-fluid">
+  <div className="containerBlackDashboard-fluid mt-5">
     {/* Page Heading */}
     {/* DataTales Example */}
-    <div className="card shadow mb-4 text-center">
+    <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
       <div className="card-body">
       <form onSubmit={formik.handleSubmit}>
       <div class="spacer"></div>

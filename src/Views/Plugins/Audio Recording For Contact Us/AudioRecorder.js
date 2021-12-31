@@ -153,7 +153,7 @@ export default class AudioRecorder extends Component {
          </center>
           {/*}
           <div className="containerSass">
-          <button className="btn btn-outline-primary">
+          <button className="btn m-2 shadow-sm  btn-outline-muted">
             <div className="iconSass-container">
               <svg className="iconSass play">
                 <use xlinkHref="#play" />

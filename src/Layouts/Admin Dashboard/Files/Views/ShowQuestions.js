@@ -26,7 +26,7 @@ function ShowQuestionsForAdmin(props) {
                                         <td>{question.q1}</td>
                                         <td>{question.q2}</td>
                                         <td>{question.q3}</td>
-                                        <td><button onClick={() => {props.editdata(question)}} className="btn btn-outline-primary">Edit</button></td>
+                                        <td><button onClick={() => {props.editdata(question)}} className="btn m-2 shadow-sm  btn-outline-muted">Edit</button></td>
                                         <td><button onClick={() => props.delemp(question.id)} className="btn btn-outline-danger">Delete</button></td>
                                     </tr>
                                 ))

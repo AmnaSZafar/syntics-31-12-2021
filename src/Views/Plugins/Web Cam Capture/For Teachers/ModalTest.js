@@ -69,7 +69,7 @@ export default class ModalTest extends React.Component {
     
         return (
           <div>
-            <button type="button" className="btn btn-outline-primary" onClick={this.toggleModal(MODAL_A)}><i className="fa fa-video-camera fa-lg"></i> <span style = {{paddingLeft : "15px", fontWeight : "bold"}}>Record Video</span></button>
+            <button type="button" className="btn m-2 shadow-sm  btn-outline-muted" onClick={this.toggleModal(MODAL_A)}><i className="fa fa-video-camera fa-lg"></i> <span style = {{paddingLeft : "15px", fontWeight : "bold"}}>Record Video</span></button>
             <MyModal
               title={this.state.title1}
               isOpen={currentModal == MODAL_A}

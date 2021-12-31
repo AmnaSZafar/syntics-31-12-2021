@@ -15,11 +15,11 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
         if(location.state.answertype == "Drawing"){
             return(
                 <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Attachments</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
-                            <img width="350" className = "text-dark" style={{textDecoration : "none", fontWeight: "bold",  boxShadow: "5px 5px #888888"}} src={`https://syntics.co/api/file/display/${location.state.questionReferenceName}`}>
+                            <img width="350" className = "text-dark" style={{textDecoration : "none", fontWeight: "bold",  boxShadow: "5px 5px #888888"}} src={`http://localhost:7000/api/file/display/${location.state.questionReferenceName}`}>
                             </img>
                         </div>
                         <hr />
@@ -29,11 +29,11 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
         else if(location.state.answertype == "Audio"){
             return(
                 <div className = "mt-4">
-                <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                     <label >Attachments</label>
                 </div>
                 <div class="p-3 mb-2 bg-light text-dark">
-                    <audio src={`https://syntics.co/api/file/display/${location.state.questionReferenceName}`}  controls="controls" className="" type="audio/mpeg"  />
+                    <audio src={`http://localhost:7000/api/file/display/${location.state.questionReferenceName}`}  controls="controls" className="" type="audio/mpeg"  />
                 </div>
                 <hr />
             </div> 
@@ -42,11 +42,11 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
         else if(location.state.answertype == "Video"){
             return(
                 <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Attachments</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
-                            <video controls width="400" src = {`https://syntics.co/api/file/display/${location.state.questionReferenceName}`}  type="video/webm" />
+                            <video controls width="400" src = {`http://localhost:7000/api/file/display/${location.state.questionReferenceName}`}  type="video/webm" />
                         </div>
                         <hr />
                     </div>
@@ -58,11 +58,11 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
         if(location.state.answertype == "Drawing"){
             return(
             <div className = "mt-4">
-            <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+            <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                 <label >Attachments</label>
             </div>
             <div class="p-3 mb-2 bg-light text-dark">
-                <img width="350" className = "text-dark" style={{textDecoration : "none", fontWeight: "bold",  boxShadow: "5px 5px #888888"}} src={`https://syntics.co/api/file/display/${location.state.referenceName}`}>
+                <img width="350" className = "text-dark" style={{textDecoration : "none", fontWeight: "bold",  boxShadow: "5px 5px #888888"}} src={`http://localhost:7000/api/file/display/${location.state.referenceName}`}>
                 </img>
             </div>
             <hr />
@@ -72,7 +72,7 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
         else{
             return(
                 <div className = "mt-4">
-                <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                     <label >Answer Content</label>
                 </div>
                 <div class="p-3 mb-2 bg-light text-dark">
@@ -93,18 +93,18 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
 {/* Main Content */}
 <div id="content">
 {/* Begin Page Content */}
-<div className="containerBlackDashboard-fluid">
+<div className="containerBlackDashboard-fluid mt-5">
   {/* Page Heading */}
-  <h1 className="h3BlackDashboard mb-2 text-gray-800">Content</h1>
+  <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Content</h1>
   
   {/* DataTales Example */}
-  <div className="card shadow mb-4">
-    <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-      <h6 className="m-0 font-weight-bold text-white">View Clicked Content</h6>
+  <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4">
+    <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+      <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>View Clicked Content</h5>
     </div>
     <div className="card-body">
     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Course Type</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -114,7 +114,7 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
                     </div>
                    
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Answer Type</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -124,7 +124,7 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
                     </div>
                         
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Question Title</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -133,7 +133,7 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
                         <hr />
                     </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Question Content</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -144,7 +144,7 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
                     {handlingAttachments()}
                     {handlingAnswerAttachments()}
                   <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Total Marks</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -153,7 +153,7 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
                         <hr />
                     </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Marks Obtained</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -162,7 +162,7 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
                         <hr />
                     </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Teacher's Comment</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -179,7 +179,7 @@ function ViewCurrentAnswerAdminAttachmentForTest() {
 </div>
 {/* End of Main Content */}
 {/* Footer */}
-<footer className="sticky-footer bg-white">
+<footer className="sticky-footer bg-transparent">
 <div className="containerBlackDashboard my-auto">
   <div className="copyright text-center my-auto">
     <span></span>

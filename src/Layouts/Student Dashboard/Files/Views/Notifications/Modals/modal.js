@@ -31,15 +31,15 @@ export default props => {
       onAfterOpen={onAfterOpen}
       onRequestClose={onRequestClose}>
       <div className="buttonNewTheme text-right">
-                        <button  className="btn btn-outline-primary" style = {{fontWeight : "bold", height:"65px" , width: "65px"}}  onClick={askToClose}>
+                        <button  className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold", height:"65px" , width: "65px"}}  onClick={askToClose}>
                         <i className="fa fa-times" ></i>
                         </button>
       </div>
       <div className = "text-center">
       <h1>Record Video</h1>
-      <div>Press <i className ="fas fa-record-vinyl fa-lg" style={{color : "#306EFF"}} ></i><span style = {{color : "#306EFF", fontWeight: 'bold'}}> Rec </span> To Start Recording</div>
-      <div>Press <i className="fa fa-stop" style={{color : "#306EFF"}} ></i> To Stop Recording</div>
-      <div>Press <i className="fa fa-download" style={{color : "#306EFF"}} ></i> To Download/Send Recording</div>
+      <div>Press <i className ="fas fa-record-vinyl fa-lg" style={{color : "rgba(55, 64, 85, 0.9)"}} ></i><span style = {{color : "rgba(55, 64, 85, 0.9)", fontWeight: 'bold'}}> Rec </span> To Start Recording</div>
+      <div>Press <i className="fa fa-stop" style={{color : "rgba(55, 64, 85, 0.9)"}} ></i> To Stop Recording</div>
+      <div>Press <i className="fa fa-download" style={{color : "rgba(55, 64, 85, 0.9)"}} ></i> To Download/Send Recording</div>
       <WebCamStreamVideoCapture />
       
       </div>

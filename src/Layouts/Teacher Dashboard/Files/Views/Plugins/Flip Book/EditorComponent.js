@@ -146,21 +146,21 @@ function EditorComponent(props) {
       {/* Main Content */}
       <div id="content">
         {/* Begin Page Content */}
-        <div className="containerBlackDashboard-fluid">
+        <div className="containerBlackDashboard-fluid mt-5">
           {/* Page Heading */}
           {/* DataTales Example */}
-          <div className="card shadow mb-4 text-center">
+          <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
             <div className="card-body">
-            <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                <label><h6 className = "text-white">Upload Image for Content</h6></label>
+            <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                <label><h5 className = "text-white">Upload Image for Content</h5></label>
            </div>
             <input type="file" onChange={(e) => fileChanged(e)}/>
             </div>
             <div className="card-body">
             <form onSubmit={formik.handleSubmit}>
                         <div className = "mt-4"> 
-                            <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
-                                <label><h6 className = "text-white">Please create your desired Content below</h6></label>
+                            <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                                <label><h5 className = "text-white">Please create your desired Content below</h5></label>
                             </div>
                             <div class="p-3 mb-2 bg-light text-dark">
                               <Editor
@@ -188,7 +188,7 @@ function EditorComponent(props) {
                             <hr />
                         </div>
                           <div className="">
-                              <button type="submit" className="btn btn-outline-primary">
+                              <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted">
                                 Create Content
                               </button>
                           </div>

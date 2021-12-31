@@ -31,35 +31,35 @@ function ResultsCategoryForStudents() {
 {/* Main Content */}
 <div id="content">
 {/* Begin Page Content */}
-<div className="containerBlackDashboard-fluid">
+<div className="containerBlackDashboard-fluid mt-5">
 {/* Page Heading */}
-<h1 className="h3BlackDashboard mb-2 text-gray-800">Category of Results</h1>
+<h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Category of Results</h1>
 
 {/* DataTales Example */}
-<div className="card shadow mb-4">
-<div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-<h6 className="m-0 font-weight-bold text-white">Select A Category</h6>
+<div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4">
+<div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+<h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Select A Category</h5>
 </div>
 <div className="card-body">
 <Row className="mt-3">
     <Col md="4">
     <div className = "text-center">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold", }} onClick={(e) => onSubjectClick(e)}>
-                            Results <br />of <br /> Subjects
+                            <button className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold", }} onClick={(e) => onSubjectClick(e)}>
+                            Results of  Subjects
                             </button>
                           </div>
       </Col>
       <Col md="4">
       <div className = "text-center">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold",  }} onClick={(e) => onTestClick(e)}>
-                            Results <br />of <br /> Tests
+                            <button className="btn lead m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "900", color:'rgba(55, 64, 85, 0.9)' }} onClick={(e) => onTestClick(e)}>
+                            Results of  Tests
                             </button>
                           </div>
       </Col>
       <Col md="4">
       <div className = "text-center">
-                            <button className="btn btn-outline-primary" style = {{fontWeight : "bold",  }} onClick={(e) => onAssignmentClick(e)}>
-                            Results <br />of <br /> Assignments
+                            <button className="btn lead m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "900", color:'rgba(55, 64, 85, 0.9)' }} onClick={(e) => onAssignmentClick(e)}>
+                            Results of  Assignments
                             </button>
                           </div>
       </Col>
@@ -73,7 +73,7 @@ function ResultsCategoryForStudents() {
 </div>
 {/* End of Main Content */}
 {/* Footer */}
-<footer className="sticky-footer bg-white">
+<footer className="sticky-footer bg-transparent">
 <div className="containerBlackDashboard my-auto">
 <div className="copyright text-center my-auto">
 <span></span>

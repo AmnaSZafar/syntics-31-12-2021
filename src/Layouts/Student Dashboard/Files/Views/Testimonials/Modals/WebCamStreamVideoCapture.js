@@ -153,20 +153,20 @@ function WebCamStreamVideoCapture() {
 {/* Main Content */}
 <div id="content">
   {/* Begin Page Content */}
-  <div className="containerBlackDashboard-fluid">
+  <div className="containerBlackDashboard-fluid mt-5">
     {/* Page Heading */}
-    <h1 className="h3BlackDashboard mb-2 text-gray-800"></h1>
+    <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}></h1>
     {/* DataTales Example */}
-    <div className="card shadow mb-4 text-center">
-      <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-        <h6 className="m-0 font-weight-bold text-white"></h6>
+    <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
+      <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+        <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}></h5>
       </div>
       <div className="card-body">
       <Webcam audio={false} ref={webcamRef} style={{height:"250px"}} />
       {capturing ? (
         <div>
            <div className="buttonNewTheme mb-2">
-                        <button  className="btn btn-outline-primary" style = {{fontWeight : "bold"}}  onClick={handleStopCaptureClick}>
+                        <button  className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold"}}  onClick={handleStopCaptureClick}>
                           <i className="fa fa-stop fa-lg"></i>
                         </button>
                     </div>
@@ -174,7 +174,7 @@ function WebCamStreamVideoCapture() {
       ) : (
         <div>
           <div className="buttonNewTheme mb-2">
-                        <button  className="btn btn-outline-primary" style = {{fontWeight : "bold"}}  onClick={handleStartCaptureClick}>
+                        <button  className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold"}}  onClick={handleStartCaptureClick}>
                           <i className="fas fa-record-vinyl fa-lg"></i><span style = {{fontWeight: 'bold'}}> Rec </span>
                         </button>
                     </div>
@@ -182,7 +182,7 @@ function WebCamStreamVideoCapture() {
       )}
       {recordedChunks.length > 0 && (
          <div className="buttonNewTheme mb-2">
-         <button  className="btn btn-outline-primary" style = {{fontWeight : "bold"}}  onClick={handleDownload}>
+         <button  className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold"}}  onClick={handleDownload}>
            <i className="fa fa-download fa-lg"></i>
          </button>
      </div>

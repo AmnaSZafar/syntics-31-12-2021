@@ -135,20 +135,20 @@ function CreateProjectForAdmin() {
   {/* Main Content */}
   <div id="content">
     {/* Begin Page Content */}
-    <div className="containerBlackDashboard-fluid">
+    <div className="containerBlackDashboard-fluid mt-5">
       {/* Page Heading */}
-      <h1 className="h3BlackDashboard mb-2 text-gray-800"></h1>
+      <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}></h1>
       {/* DataTales Example */}
-      <div className="card shadow mb-4 text-center">
-        <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-          <h6 className="m-0 font-weight-bold text-white">Project Creation</h6>
+      <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
+        <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+          <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Project Creation</h5>
         </div>
         <div className="card-body">
           <div>
           <form onSubmit={formik.handleSubmit}>
           <div className = "mt-4"> 
-                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                          <label><h6 className = "text-white">Project's Title</h6></label>
+                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                          <label><h5 className = "text-white">Project's Title</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-light text-dark">
                       <input type="text" placeholder="Title for Project" name="projectTitle" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.projectTitle} className="form-control" required  />
@@ -157,8 +157,8 @@ function CreateProjectForAdmin() {
                       <hr />
                   </div>
                   <div className = "mt-4"> 
-                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                          <label><h6 className = "text-white">Project Type</h6></label>
+                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                          <label><h5 className = "text-white">Project Type</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-light text-dark">
                       <select name="projectType" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.projectType} className="form-control" >
@@ -171,8 +171,8 @@ function CreateProjectForAdmin() {
                       <hr />
                   </div>
                   <div className = "mt-4"> 
-                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                          <label><h6 className = "text-white">Project's Start Date</h6></label>
+                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                          <label><h5 className = "text-white">Project's Start Date</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-light text-dark">
                       <input type="date" name="projectStartDate" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.projectStartDate} className="form-control" required  />
@@ -181,8 +181,8 @@ function CreateProjectForAdmin() {
                       <hr />
                   </div>
                   <div className = "mt-4"> 
-                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                          <label><h6 className = "text-white">Project's Due Date</h6></label>
+                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                          <label><h5 className = "text-white">Project's Due Date</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-light text-dark">
                       <input type="date" name="projectDueDate" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.projectDueDate} className="form-control" required  />
@@ -191,8 +191,8 @@ function CreateProjectForAdmin() {
                       <hr />
                   </div>
                   <div className = "mt-4"> 
-                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                          <label><h6 className = "text-white">Project's Description</h6></label>
+                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                          <label><h5 className = "text-white">Project's Description</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-light text-dark">
                       <textarea rows="4" cols="50"  name="projectDescription" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.projectDescription} className="form-control" required >
@@ -202,15 +202,15 @@ function CreateProjectForAdmin() {
                       <hr />
                   </div>
                   <div className="card-body">
-                        <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                            <label><h6 className = "text-white">Attachments:</h6></label>
+                        <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
+                            <label><h5 className = "text-white">Attachments:</h5></label>
                       </div>
                         <input type="file" onChange={(e) => fileChanged(e)}/>
                         </div>
                         <center>
                         <div>    
                         <div className="">
-                          <button type="submit" className="btn btn-outline-primary" style = {{fontWeight : 'bold',}}>
+                          <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted" style = {{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>
                             Submit
                           </button>
                         </div>
@@ -225,7 +225,7 @@ function CreateProjectForAdmin() {
   </div>
   {/* End of Main Content */}
   {/* Footer */}
-  <footer className="sticky-footer bg-white">
+  <footer className="sticky-footer bg-transparent">
     <div className="containerBlackDashboard my-auto">
       <div className="copyright text-center my-auto">
         <span></span>

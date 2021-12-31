@@ -85,7 +85,7 @@ function EditContentQAForAdmin() {
             <form onSubmit={formik.handleSubmit}>
                   <div className = "mt-4"> 
                       <div class="p-3 mb-2 bg-light text-dark">
-                          <label ><h6 className="m-0 font-weight-bold text-white">Question's Title</h6></label>
+                          <label ><h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Question's Title</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-dark text-white">
                       <input type="text" placeholder="Title for Question" name="questiontitle" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.questiontitle} className="form-control" required  />
@@ -95,7 +95,7 @@ function EditContentQAForAdmin() {
                   </div>
                   <div className = "mt-4"> 
                       <div class="p-3 mb-2 bg-light text-dark">
-                          <label ><h6 className="m-0 font-weight-bold text-white">Please edit your desired <b>Q/A</b> Question below</h6></label>
+                          <label ><h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Please edit your desired <b>Q/A</b> Question below</h5></label>
                       </div>
                       <div class="p-3 mb-2 bg-dark text-white">
                         <Editor
@@ -123,7 +123,7 @@ function EditContentQAForAdmin() {
                   </div>
                   <div className = "mt-4"> 
                         <div class="p-3 mb-2 bg-light text-dark">
-                            <label ><h6 className="m-0 font-weight-bold text-white">Total Marks</h6></label>
+                            <label ><h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Total Marks</h5></label>
                         </div>
                         <div class="p-3 mb-2 bg-dark text-white">
                               {/*2 put onChange = {formkit.handleChange} value={formik.values.name} in all the form fields with their corroposind name  in values */}

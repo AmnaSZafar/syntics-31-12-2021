@@ -88,7 +88,7 @@ table.dataTable tfoot th{
         border: 1px solid #e2e2e2;
         padding: .3rem 0.5rem;
         color: rgba(113, 93, 93, 1);
-        border-radius: 5px;
+        border-radius: 15px;
         @at-root [data-theme-version="dark"] & {
             background: $d-bg;
             border-color: $d-border;

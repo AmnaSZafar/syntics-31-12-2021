@@ -431,7 +431,7 @@ function Contact() {
 {/*}
         <div>    
         <div className="containerSass">
-          <button className="btn btn-outline-primary">
+          <button className="btn m-2 shadow-sm  btn-outline-muted">
             <div>
               <svg className="iconSass play">
                 <use xlinkHref="#play" />

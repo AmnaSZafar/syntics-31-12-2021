@@ -24,19 +24,19 @@ const SidebarForStudent = (props) => {
       <div
       >
         <div>
-        <div className="sidebar" >
+        <div className="sidebar"  style={{ background: 'rgb(55,64,85)', background: 'linear-gradient(72deg, rgba(55,64,85,1) 28%, rgba(63,70,87,1) 59%, rgba(55,64,85,0.9416141456582633) 88%)', boxShadow: 'none' }} >
           <div className="sidebar-wrapper">
-            <Nav>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+            <Nav className="mt-4">
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/student/category-for-performance/${id}`} 
                     >
                       <i className = "tim-icons icon-badge" />
                       <p>Performance</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/student/list-of-subjects/${id}`} 
                     >
@@ -44,16 +44,16 @@ const SidebarForStudent = (props) => {
                       <p>View Subjects</p>
                     </NavLink>
                  
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/student/list-of-subjects-for-test/${id}`}
                     >
                       <i className = "tim-icons icon-trophy" />
                       <p>View Tests Content</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/student/list-of-subjects-for-assignments/${id}`}
                     >
@@ -61,8 +61,8 @@ const SidebarForStudent = (props) => {
                       <p>View Assignments</p>
                     </NavLink>
                    
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/student/results-category-students/${id}`}
                     >
@@ -70,8 +70,8 @@ const SidebarForStudent = (props) => {
                       <p>Results</p>
                     </NavLink>
                    {/*}
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/student/notifications-category-students/${id}`}
                     >
@@ -79,32 +79,32 @@ const SidebarForStudent = (props) => {
                       <p>Notification</p>
                     </NavLink>
     */}
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/student/testimonial-list/${id}`}
                     >
                       <i className = "tim-icons icon-paper" />
                       <p>Student Complains</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/student/list-of-links-liveClass/${id}`}
                     >
                       <i className = "tim-icons icon-paper" />
                       <p>Live Class</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/student/conferenceCall/${id}`}
                     >
                       <i className = "tim-icons icon-paper" />
                       <p>Conference Call</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/student/create-student-group/${id}`}
                     >

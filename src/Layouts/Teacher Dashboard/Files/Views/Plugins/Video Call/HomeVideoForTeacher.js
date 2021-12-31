@@ -111,17 +111,17 @@ function HomeVideoForTeacher() {
         {/* Main Content */}
         <div id="content">
           {/* Begin Page Content */}
-          <div className="containerBlackDashboard-fluid">
+          <div className="containerBlackDashboard-fluid mt-5">
             {/* Page Heading */}
             {/* DataTales Example */}
-            <div className="card shadow mb-4 text-center">
-              <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
+            <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
+              <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
 			          <label><h3 className = "text-white">Live Class</h3></label>  
               </div>
               <div className="card-body">
                 <div> 
                                 <div className = "mb-3">
-                                <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
+                                <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                                 </div>
                             {/*2 put onChange = {formkit.handleChange} value={formik.values.name} in all the form fields with their corroposind name  in values */}
                                 </div>
@@ -130,7 +130,7 @@ function HomeVideoForTeacher() {
                                 </div>
                                 <center>
                                 <div className="">
-                                  <button type="submit" className="btn btn-outline-primary"  style = {{fontWeight: "bold"}} onClick={(e) => join(e)}>
+                                  <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted"  style = {{fontWeight: "bold"}} onClick={(e) => join(e)}>
 									                  Create Session
                                   </button>
                                 </div>
@@ -144,7 +144,7 @@ function HomeVideoForTeacher() {
         </div>
         {/* End of Main Content */}
         {/* Footer */}
-        <footer className="sticky-footer bg-white">
+        <footer className="sticky-footer bg-transparent">
           <div className="containerBlackDashboard my-auto">
             <div className="copyright text-center my-auto">
               <span></span>

@@ -12,7 +12,7 @@ function FilesUploadFunctionalForStudent(props) {
         const formData = new FormData()
         formData.append('profileImg', state.profileImg)
         console.log(formData)
-        axios.post("https://syntics.co/api/user-profile", formData, {
+        axios.post("http://localhost:7000/api/user-profile", formData, {
         }).then(res => {
             console.log(res)
         })

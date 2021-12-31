@@ -34,7 +34,7 @@ function ViewCurrentAnswerVideoAudioForTest() {
       const fileForCv = () => {
         axios({
             method: "POST",
-            url: `https://syntics.co/api/file/display/${location.state.referenceName}`,
+            url: `http://localhost:7000/api/file/display/${location.state.referenceName}`,
             responseType: "blob"
           })
             .then(res => rezzingFileForCv(res.data),)
@@ -125,17 +125,17 @@ function ViewCurrentAnswerVideoAudioForTest() {
 {/* Main Content */}
 <div id="content">
   {/* Begin Page Content */}
-  <div className="containerBlackDashboard-fluid">
+  <div className="containerBlackDashboard-fluid mt-5">
     {/* Page Heading */}
-    <h1 className="h3BlackDashboard mb-2 text-gray-800">Course Planning</h1>
+    <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Course Planning</h1>
     {/* DataTales Example */}
-    <div className="card shadow mb-4 text-center">
-      <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-        <h6 className="m-0 font-weight-bold text-white"> {location.state.name}'s Question Content </h6>
+    <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
+      <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+        <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}> {location.state.name}'s Question Content </h5>
       </div>
       <div className="card-body">
       <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Question's Title</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -144,7 +144,7 @@ function ViewCurrentAnswerVideoAudioForTest() {
                         <hr />
                     </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Question's Content</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -153,7 +153,7 @@ function ViewCurrentAnswerVideoAudioForTest() {
                         <hr />
                     </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Total Marks</label>
                         </div>
                         <div class="p-3 mb-2 bg-light text-dark">
@@ -163,14 +163,14 @@ function ViewCurrentAnswerVideoAudioForTest() {
         </div>
       </div>
     </div>
-    <div className="card shadow mb-4 text-center">
-      <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-        <h6 className="m-0 font-weight-bold text-white"> {location.state.name}'s Answer</h6>
+    <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
+      <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+        <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}> {location.state.name}'s Answer</h5>
       </div>
       <div className="card-body">
       <div>
       <div className = "mt-4">
-                    <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                    <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Student's Answer</label>
                         </div>
                         <div class="p-3 mb-2 bg-white text-dark">
@@ -179,7 +179,7 @@ function ViewCurrentAnswerVideoAudioForTest() {
                         <hr />
                     </div>
                     <div className = "mt-4">
-                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                        <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                             <label >Marks given to Student</label>
                         </div>
                             <form onSubmit={formik.handleSubmit}>
@@ -192,7 +192,7 @@ function ViewCurrentAnswerVideoAudioForTest() {
                             </div>
                             <hr />
                             <div className = "mt-4">
-                                <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                                <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                                     <label >Teacher's Remarks</label>
                                 </div>
                                 <div class="p-3 mb-2 bg-white text-dark">
@@ -220,7 +220,7 @@ function ViewCurrentAnswerVideoAudioForTest() {
                                 <hr />
                             </div>
                             <div >
-                                  <button type = "submit" className="btn btn-outline-primary" style = {{fontWeight : "bold",}}>
+                                  <button type = "submit" className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold",}}>
                                   Submit Marks and Review
                                   </button>
                             </div>
@@ -235,7 +235,7 @@ function ViewCurrentAnswerVideoAudioForTest() {
 </div>
 {/* End of Main Content */}
 {/* Footer */}
-<footer className="sticky-footer bg-white">
+<footer className="sticky-footer bg-transparent">
   <div className="containerBlackDashboard my-auto">
     <div className="copyright text-center my-auto">
       <span></span>

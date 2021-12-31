@@ -101,7 +101,7 @@
 		height: 5px;
 		width: 5px;
 		background: rgba($dark, 0.4);
-		border-radius: 5px;
+		border-radius: 15px;
 		display: block;	
 		&:after,
 		&:before{
@@ -110,7 +110,7 @@
 			width: 5px;
 			background: rgba($dark, 0.4);
 			position: absolute;
-			border-radius: 5px;
+			border-radius: 15px;
 		}
 		&:after{
 			right: -8px;

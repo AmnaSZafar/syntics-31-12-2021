@@ -75,7 +75,7 @@ function Grade1ContentForTeacher() {
     }
   }
   const handleOnClickDelete = (data) => {
-    axios.delete('https://syntics.co/coursePlannings/delete/' + data._id)
+    axios.delete('http://localhost:7000/coursePlannings/delete/' + data._id)
           .then((res) => {
               console.log('Student successfully deleted!')
               window.location.reload(false)
@@ -130,14 +130,14 @@ function Grade1ContentForTeacher() {
 {/* Main Content */}
 <div id="content">
 {/* Begin Page Content */}
-<div className="containerBlackDashboard-fluid">
+<div className="containerBlackDashboard-fluid mt-5">
 {/* Page Heading */}
-<h1 className="h3BlackDashboard mb-2 text-gray-800">Content</h1>
+<h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Content</h1>
 
 {/* DataTales Example */}
-<div className="card shadow mb-4">
-  <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-    <h6 className="m-0 font-weight-bold text-white">List of Content related Questions</h6>
+<div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4">
+  <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+    <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>List of Content related Questions</h5>
   </div>
   <div className="card-body">
     <div className="table-responsive">
@@ -175,22 +175,22 @@ function Grade1ContentForTeacher() {
                                 </td>
                                 <td>
                                   <div className="">
-                                    <button className="btn btn-outline-primary"   onClick={() => handleOnClickView(contents)}>View</button>
+                                    <button className="btn m-2 shadow-sm  btn-outline-muted"   onClick={() => handleOnClickView(contents)}>View</button>
                                   </div>
                                 </td>
                                 <td>
                                   <div className="">
-                                    <button className="btn btn-outline-primary"   onClick={() => handleOnClickEdit(contents)}>Edit</button>
+                                    <button className="btn m-2 shadow-sm  btn-outline-muted"   onClick={() => handleOnClickEdit(contents)}>Edit</button>
                                   </div>
                                 </td>
                                 <td>
                                   <div className="">
-                                    <button className="btn btn-outline-primary"   onClick={() => handleOnClickDelete(contents)}>Delete</button>
+                                    <button className="btn m-2 shadow-sm  btn-outline-muted"   onClick={() => handleOnClickDelete(contents)}>Delete</button>
                                   </div>
                                 </td>
                                 <td>
                                   <div className="">
-                                    <button className="btn btn-outline-primary"  onClick={() => handleOnClickAnswers(contents)}>Answers</button>
+                                    <button className="btn m-2 shadow-sm  btn-outline-muted"  onClick={() => handleOnClickAnswers(contents)}>Answers</button>
                                   </div>
                                 </td>
                                 </tr>
@@ -211,7 +211,7 @@ function Grade1ContentForTeacher() {
 </div>
 {/* End of Main Content */}
 {/* Footer */}
-<footer className="sticky-footer bg-white">
+<footer className="sticky-footer bg-transparent">
 <div className="containerBlackDashboard my-auto">
 <div className="copyright text-center my-auto">
   <span></span>

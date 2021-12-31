@@ -84,7 +84,7 @@ export default class ModalTest extends React.Component {
           <div>
             
             <div className="buttonNewTheme mb-2">
-                        <button type="submit" className="btn btn-outline-primary" style = {{fontWeight : "bold"}}  onClick={this.toggleModal(MODAL_A)}>
+                        <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold"}}  onClick={this.toggleModal(MODAL_A)}>
                           <i className="fa fa-video-camera fa-lg"></i>Record Video
                         </button>
                     </div>

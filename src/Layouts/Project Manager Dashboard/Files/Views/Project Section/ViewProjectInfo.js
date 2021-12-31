@@ -33,7 +33,7 @@ function ViewProjectInfo() {
         const fileForProject = () => {
             axios({
                 method: "POST",
-                url: `https://syntics.co/api/file/display/${location.state.projectAttachmentsReference}`,
+                url: `http://localhost:7000/api/file/display/${location.state.projectAttachmentsReference}`,
                 responseType: "blob"
               })
                 .then(res => rezzingFileForProject(res.data),)
@@ -61,20 +61,20 @@ function ViewProjectInfo() {
   {/* Main Content */}
   <div id="content">
   {/* Begin Page Content */}
-  <div className="containerBlackDashboard-fluid">
+  <div className="containerBlackDashboard-fluid mt-5">
     {/* Page Heading */}
-    <h1 className="h3BlackDashboard mb-2 text-gray-800">Project Info</h1>
+    <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Project Info</h1>
     
     {/* DataTales Example */}
-    <div className="card shadow mb-4">
-      <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-        <h6 className="m-0 font-weight-bold text-white"></h6>
+    <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4">
+      <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+        <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}></h5>
       </div>
       <div className="card-body">
       
                      
                       <div className = "mt-4">
-                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                               <label >Project Title</label>
                           </div>
                           <div class="p-3 mb-2 bg-light text-dark">
@@ -83,7 +83,7 @@ function ViewProjectInfo() {
                           <hr />
                       </div>
                       <div className = "mt-4">
-                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                               <label >Project Type</label>
                           </div>
                           <div class="p-3 mb-2 bg-light text-dark">
@@ -92,7 +92,7 @@ function ViewProjectInfo() {
                           <hr />
                       </div>
                       <div className = "mt-4">
-                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                               <label >Project Start Date</label>
                           </div>
                           <div class="p-3 mb-2 bg-light text-dark">
@@ -101,7 +101,7 @@ function ViewProjectInfo() {
                           <hr />
                       </div>
                       <div className = "mt-4">
-                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                               <label >Project Due Date</label>
                           </div>
                           <div class="p-3 mb-2 bg-light text-dark">
@@ -110,7 +110,7 @@ function ViewProjectInfo() {
                           <hr />
                       </div>
                       <div className = "mt-4">
-                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                               <label >Project Status</label>
                           </div>
                           <div class="p-3 mb-2 bg-light text-dark">
@@ -119,7 +119,7 @@ function ViewProjectInfo() {
                           <hr />
                       </div>
                       <div className = "mt-4">
-                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                               <label >Description</label>
                           </div>
                           <div class="p-3 mb-2 bg-light text-dark">
@@ -128,7 +128,7 @@ function ViewProjectInfo() {
                           <hr />
                       </div>
                       <div className = "mt-4">
-                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "#306EFF"}}>
+                          <div class="p-3 mb-2 " style = {{color : "white", backgroundColor : "rgba(55, 64, 85, 0.9)"}}>
                               <label >Attachments</label>
                           </div>
                           <div class="p-3 mb-2 bg-light text-dark">
@@ -151,7 +151,7 @@ function ViewProjectInfo() {
                              
                         {/*}    
                         <div className="">
-                          <button type="submit" className="btn btn-outline-primary" onClick = {(e) => onBackClick(e)}>
+                          <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted" onClick = {(e) => onBackClick(e)}>
                             Back to Grades
                           </button>
                         </div>
@@ -165,7 +165,7 @@ function ViewProjectInfo() {
   </div>
   {/* End of Main Content */}
   {/* Footer */}
-  <footer className="sticky-footer bg-white">
+  <footer className="sticky-footer bg-transparent">
   <div className="containerBlackDashboard my-auto">
     <div className="copyright text-center my-auto">
       <span></span>

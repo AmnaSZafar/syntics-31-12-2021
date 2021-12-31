@@ -19,19 +19,19 @@ function ConferenceCall() {
 {/* Main Content */}
 <div id="content">
 {/* Begin Page Content */}
-<div className="containerBlackDashboard-fluid">
+<div className="containerBlackDashboard-fluid mt-5">
   {/* Page Heading */}
-  <h1 className="h3BlackDashboard mb-2 text-gray-800">Conference Call</h1>
+  <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Conference Call</h1>
   
   {/* DataTales Example */}
-  <div className="card shadow mb-4">
-    <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-      <h6 className="m-0 font-weight-bold text-center text-white"> Click to join/host a conference call</h6>
+  <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4">
+    <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+      <h5 className="m-0 font-weight-bold text-center text-white"> Click to join/host a conference call</h5>
     </div>
     <div className="card-body">
     <center>
                                 <div className="">
-                                  <button  type="submit" className="btn btn-outline-primary" style = {{fontWeight : "bold" }} onClick={(e) => handleOnClick(e)}>
+                                  <button  type="submit" className="btn m-2 shadow-sm  btn-outline-muted" style = {{fontWeight : "bold" }} onClick={(e) => handleOnClick(e)}>
                                     Join/Host a Meeting
                                   </button>
                                 </div>
@@ -44,7 +44,7 @@ function ConferenceCall() {
 </div>
 {/* End of Main Content */}
 {/* Footer */}
-<footer className="sticky-footer bg-white">
+<footer className="sticky-footer bg-transparent">
 <div className="containerBlackDashboard my-auto">
   <div className="copyright text-center my-auto">
     <span></span>

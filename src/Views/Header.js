@@ -17,16 +17,16 @@ function Header() {
                   <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-5">
                       
-                      <Nav.Link className="nav-link scrollto active text-warning" href="/#about"><h6 className="font-weight-bold" style={{color:'#ffc107'}}>About</h6></Nav.Link>
-                      <Nav.Link className="nav-link scrollto active text-warning" href="/#services"><h6 className="font-weight-bold" style={{color:'#ffc107'}}>Services</h6></Nav.Link>
-                      <Nav.Link className="nav-link scrollto active text-warning" href="/#portfolio"><h6 className="font-weight-bold" style={{color:'#ffc107'}}>Projects</h6></Nav.Link>
-                      <Nav.Link className="nav-link scrollto active text-warning" href="/#pricing"><h6 className="font-weight-bold" style={{color:'#ffc107'}}>Courses</h6></Nav.Link>
-                      <Nav.Link className="nav-link scrollto active text-warning" href="/apply"><h6 className="font-weight-bold" style={{color:'#ffc107'}}>Admissions</h6></Nav.Link>
-                      <Nav.Link className="nav-link scrollto active text-warning" href="/seminar"><h6 className="font-weight-bold" style={{color:'#ffc107'}}>Seminar</h6></Nav.Link>
-                      <Nav.Link className="nav-link scrollto active text-warning" href="/#team"><h6 className="font-weight-bold" style={{color:'#ffc107'}}>Team</h6></Nav.Link>
-                      <Nav.Link className="nav-link scrollto active text-warning" href="/#careers"><h6 className="font-weight-bold" style={{color:'#ffc107'}}>Careers</h6></Nav.Link>
-                      <Nav.Link className="nav-link scrollto active text-warning" href="/#contact"><h6 className="font-weight-bold" style={{color:'#ffc107'}}>Contact</h6></Nav.Link>
-                      <Nav.Link className="nav-link scrollto active text-warning" href="/login"><h6 className="font-weight-bold" style={{color:'#ffc107'}}>Login</h6></Nav.Link>
+                      <Nav.Link className="nav-link scrollto active text-warning" href="/#about"><h5 className="font-weight-bold" style={{color:'#ffc107'}}>About</h5></Nav.Link>
+                      <Nav.Link className="nav-link scrollto active text-warning" href="/#services"><h5 className="font-weight-bold" style={{color:'#ffc107'}}>Services</h5></Nav.Link>
+                      <Nav.Link className="nav-link scrollto active text-warning" href="/#portfolio"><h5 className="font-weight-bold" style={{color:'#ffc107'}}>Projects</h5></Nav.Link>
+                      <Nav.Link className="nav-link scrollto active text-warning" href="/#pricing"><h5 className="font-weight-bold" style={{color:'#ffc107'}}>Courses</h5></Nav.Link>
+                      <Nav.Link className="nav-link scrollto active text-warning" href="/apply"><h5 className="font-weight-bold" style={{color:'#ffc107'}}>Admissions</h5></Nav.Link>
+                      <Nav.Link className="nav-link scrollto active text-warning" href="/seminar"><h5 className="font-weight-bold" style={{color:'#ffc107'}}>Seminar</h5></Nav.Link>
+                      <Nav.Link className="nav-link scrollto active text-warning" href="/#team"><h5 className="font-weight-bold" style={{color:'#ffc107'}}>Team</h5></Nav.Link>
+                      <Nav.Link className="nav-link scrollto active text-warning" href="/#careers"><h5 className="font-weight-bold" style={{color:'#ffc107'}}>Careers</h5></Nav.Link>
+                      <Nav.Link className="nav-link scrollto active text-warning" href="/#contact"><h5 className="font-weight-bold" style={{color:'#ffc107'}}>Contact</h5></Nav.Link>
+                      <Nav.Link className="nav-link scrollto active text-warning" href="/login"><h5 className="font-weight-bold" style={{color:'#ffc107'}}>Login</h5></Nav.Link>
                     </Nav>
                   </Navbar.Collapse>
                 </Container>
@@ -34,7 +34,7 @@ function Header() {
                 {/* ======= Header ======= */}
             {/* <header id="header" className="fixed-top header-transparent">
               <div className="container-fluid text-center text-white m-0">
-                <marquee behavior="scroll" direction="right"><h6 className="lead">STUDY-INTERNSHIP PROGRAM STARTING FROM 1 <sup>st</sup> DECEMBER, 2021</h6></marquee> 
+                <marquee behavior="scroll" direction="right"><h5 className="lead">STUDY-INTERNSHIP PROGRAM STARTING FROM 1 <sup>st</sup> DECEMBER, 2021</h5></marquee> 
               </div>
               <div className="container d-flex align-items-center justify-content-between">
                 <h2 className="logo"><a href="/"> <img src="assets/img/logo.png" alt="logo" /> Syntics</a></h2>

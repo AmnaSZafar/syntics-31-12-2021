@@ -8,12 +8,12 @@ const SidebarForTeacher = () => {
   let { id } = useParams();
     return (
       <div>
-        <div className="sidebar" >
+        <div className="sidebar"  style={{ background: 'rgb(55,64,85)', background: 'linear-gradient(72deg, rgba(55,64,85,1) 28%, rgba(63,70,87,1) 59%, rgba(55,64,85,0.9416141456582633) 88%)', boxShadow: 'none' }} >
           <div className="sidebar-wrapper">
-            <Nav>
+            <Nav className="mt-4">
                     {/*}
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-2"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/dashboard/${id}`}
 
@@ -22,48 +22,48 @@ const SidebarForTeacher = () => {
                       <p>Dashboard</p>
                     </NavLink>
                       */}
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-2"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/course-planning-content/${id}`}
                     >
                       <i className = "tim-icons icon-single-copy-04" />
                       <p>Create Content</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-2"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/list-of-classes/${id}`}
                     >
                       <i className = "tim-icons icon-trophy" />
                       <p>View Content</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-2"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/course-planning-content-test/${id}`}
                     >
                       <i className = "tim-icons icon-bell-55" />
                       <p>Create Test's Content</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-2"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/list-of-classes-test/${id}`}
                     >
                       <i className = "tim-icons icon-paper" />
                       <p>View Test's Content</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-2"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/course-planning-content-assignments/${id}`}
                     >
                       <i className = "tim-icons icon-bell-55" />
                       <p>Create Assignment</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-2"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/list-of-classes-assignments/${id}`}
                     >
@@ -71,8 +71,8 @@ const SidebarForTeacher = () => {
                       <p>View Assignment</p>
                     </NavLink>
               
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-2"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/notification-list/${id}`}
                     >
@@ -80,8 +80,8 @@ const SidebarForTeacher = () => {
                       <p>Notification</p>
                     </NavLink>
                     {/*}
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/blog-list/${id}`}
                     >
@@ -89,16 +89,16 @@ const SidebarForTeacher = () => {
                       <p>Blogs</p>
                     </NavLink>
                     */}
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/live-class/${id}`}
                     >
                       <i className = "tim-icons icon-paper" />
                       <p>Live Class</p>
                     </NavLink>
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link mt-3"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/chat-teacher`}
                     >
@@ -106,8 +106,8 @@ const SidebarForTeacher = () => {
                       <p>Syntics Chat</p>
                     </NavLink>
                     {/*}
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/flip-book/${id}`}
                     >
@@ -115,8 +115,8 @@ const SidebarForTeacher = () => {
                       <p>Book</p>
                     </NavLink>
                     */}
-                    <NavLink style = {{color : 'white'}}
-                      className="nav-link"
+                    <NavLink style = {{color : 'white', fontWeight:'600'}}
+                      className="nav-link m-3 text-center display-5"
                       activeClassName="active"
                       to={`/teacher/create-exam/${id}`}
                     >

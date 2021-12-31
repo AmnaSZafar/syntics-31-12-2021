@@ -65,10 +65,10 @@ function Typography() {
                   </h5>
                 </div>
                 <div className="typography-line">
-                  <h6>
+                  <h5>
                     <span>Header 6</span>
                     The Life of Black Dashboard React
-                  </h6>
+                  </h5>
                 </div>
                 <div className="typography-line">
                   <p>

@@ -180,13 +180,13 @@ function CreateStudentGroup() {
   {/* Main Content */}
   <div id="content">
     {/* Begin Page Content */}
-    <div className="containerBlackDashboard-fluid">
+    <div className="containerBlackDashboard-fluid mt-5">
       {/* Page Heading */}
-      <h1 className="h3BlackDashboard mb-2 text-gray-800">Course Planning</h1>
+      <h1 className='text-center display-4 my-3' style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Course Planning</h1>
       {/* DataTales Example */}
-      <div className="card shadow mb-4 text-center">
-        <div className="card-header py-3" style = {{color : "white", backgroundColor : "#306EFF"}}>
-          <h6 className="m-0 font-weight-bold text-white">Content</h6>
+      <div className="card align-middle justify-content-center m-auto shadow-sm  col-xl-10 col-lg-9 col-md-8  border-0 mb-4 text-center">
+        <div className="my-3" style = {{color : "rgba(55, 64, 85, 0.9)"}}>
+          <h5 className="mb-2 lead display-5 text-center" style={{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>Content</h5>
         </div>
         <div className="card-body">
           <div>
@@ -194,7 +194,8 @@ function CreateStudentGroup() {
                     
                         <div>
                         <div className="form-group">
-                            <label htmlFor="sel1">Group Name</label>
+                        <label  htmlFor="sel1"><h5 className="mb-2 h-4 display-5 text-center" style={{ color : "rgba(55, 64, 85, 0.9)", fontWeight:'900' }}>Group Name</h5></label>
+                           
                            <input type = "text" name = "groupName" className = "form-control" placeholder = "Enter group name" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.groupName}  required/>
                             {formik.touched.groupName ? (<div className='error' style={{color:'red', fontWeight: 'bold'}}>{formik.errors.groupName}</div>) : null}
                           </div>
@@ -202,10 +203,10 @@ function CreateStudentGroup() {
                         </div>
         </form>
         <div className = "mt-4"> 
-                      <div class="p-3 mb-2" style = {{color : "white", backgroundColor : "#306EFF"}}>
-                          <label ><h6 className="m-0 font-weight-bold text-white">Options</h6></label>
-                          <p>Please click <i>Add Member</i> to add more members and <i>Remove option</i> to remove the desired member.</p>
-                          <p><b>Disclaimer:</b> Total number of members cannot exceed more than four.</p>
+                      <div class="p-3 mb-2" style = {{color : "rgba(55, 64, 85, 0.9)", backgroundColor: 'rgba(55, 64, 85, 0.1)'}}>
+                          <label ><h5 className="mb-2 h-4 display-5 text-center" style={{ color : "rgba(55, 64, 85, 0.9)", fontWeight:'900' }}>Options</h5></label>
+                          <p style = {{color : "rgba(55, 64, 85, 0.9)"}}>Please click <i>Add Member</i> to add more members and <i>Remove option</i> to remove the desired member.</p>
+                          <p style = {{color : "rgba(55, 64, 85, 0.9)"}}><b>Disclaimer:</b> Total number of members cannot exceed more than four.</p>
                       </div>
                       <div class="p-3 mb-2 bg-light text-dark">
                         {inputList.map((x, i) => {
@@ -215,17 +216,17 @@ function CreateStudentGroup() {
                                     name="options"
                                     placeholder="Enter Option"
                                     value={x.options}
-                                    onChange={e => handleInputChange(e, i)}
+                                    onChange={e => handleInputChange(e, i)} className="form-control border-0 shadow-sm"
                             />
                             <div className="btn-box">
                                 {inputList.length !== 1 && <div >
-                            <button type="submit" className="btn btn-outline-primary" onClick={() => handleRemoveClick(i)}>
+                            <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted" onClick={() => handleRemoveClick(i)} style = {{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>
                               Remove Member
                             </button>
                             </div>}
                                 
                                 {inputList.length - 1 === i &&  <div >
-                            <button type="submit" className="btn btn-outline-primary" onClick={handleAddClick}>
+                            <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted" onClick={handleAddClick} style = {{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>
                               Add Member
                             </button>
                             </div>}
@@ -241,7 +242,7 @@ function CreateStudentGroup() {
                     
                     <div>
                     <div className="form-group">
-                        <label htmlFor="sel1">Group Lead Name</label>
+                    <label  htmlFor="sel1"><h5 className="mb-2 h-4 display-5 text-center" style={{ color : "rgba(55, 64, 85, 0.9)", fontWeight:'900' }}>Group Lead Name</h5></label>
                        <input type = "text" name = "groupName" className = "form-control" placeholder = "Enter group name" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.groupName}  required/>
                         {formik.touched.groupName ? (<div className='error' style={{color:'red', fontWeight: 'bold'}}>{formik.errors.groupName}</div>) : null}
                       </div>
@@ -251,7 +252,7 @@ function CreateStudentGroup() {
                         <center>
                         <div>    
                         <div>
-                          <button type="submit" className="btn btn-outline-primary" style = {{fontWeight : 'bold',}}>
+                          <button type="submit" className="btn m-2 shadow-sm  btn-outline-muted" style = {{ color:'rgba(55, 64, 85, 0.9)', fontWeight:'900' }}>
                             Submit
                           </button>
                         </div>
@@ -267,7 +268,7 @@ function CreateStudentGroup() {
   </div>
   {/* End of Main Content */}
   {/* Footer */}
-  <footer className="sticky-footer bg-white">
+  <footer className="sticky-footer bg-transparent">
     <div className="containerBlackDashboard my-auto">
       <div className="copyright text-center my-auto">
         <span></span>

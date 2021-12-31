@@ -5,7 +5,7 @@ import axios from 'axios';
 
 export const getTeachers = (subjectChoosenForApplication, gender) => (
 	console.log(subjectChoosenForApplication, gender),
-	axios.post(`https://syntics.co/teachers/`)
+	axios.post(`http://localhost:7000/teachers/`)
 		.then(res => res.data, )
 )
 //getting API for inserting the data
@@ -19,7 +19,7 @@ export const createTeachers = (todo) => fetch("http://localhost:3001/teachers/cr
 })  
 
 //getting API for updating specific data
-export const updateTeacher = (todo, id) => fetch(`https://syntics.co/teachers/${id}`, {
+export const updateTeacher = (todo, id) => fetch(`http://localhost:7000/teachers/${id}`, {
   method: "POST",
   headers: {
     "Accept": "application/json",
@@ -28,7 +28,7 @@ export const updateTeacher = (todo, id) => fetch(`https://syntics.co/teachers/${
   body: JSON.stringify(todo)
 })  
 
-export const updateCoursePlannings = (todo, id) => fetch(`https://syntics.co/teachers/${id}`, {
+export const updateCoursePlannings = (todo, id) => fetch(`http://localhost:7000/teachers/${id}`, {
   method: "POST",
   headers: {
     "Accept": "application/json",
